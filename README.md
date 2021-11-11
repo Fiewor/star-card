@@ -27,7 +27,7 @@ The Solution:
 
 A  simple web application that empowers frontline workers(field doctors and nurses, delivery drivers, news reporters, security personnels e.t.c), to submit evidences (images, videos) of hazards in record time to emergency response teams inorder to evaluate and mitigate disaster in record time.
 
-
+Our web application is also a platform that enables frontier developers to recieve, visualize and evaluate notifications about software security threats such as bugs, when software users can reports bugs via  text, screenshots, screencasts, silent and voiced screen recording. 
 
 The Architecture:
 

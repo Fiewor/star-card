@@ -4,6 +4,7 @@ The Problem:
 
 
 Certain occupational risks, such as injuries, noise, carcinogenic agents, airborne particles and ergonomic risks account for a substantial part of the burden of chronic diseases: 37% of all cases of back pain, 16% of hearing loss, 13% of chronic obstructive pulmonary disease, 11% of asthma, 8% of injuries, 9% of lung cancer, 2% of leukaemia and 8% of depression.
+
 Annually 12.2 million people, mostly in developing countries, die from noncommunicable diseases while still of active working age.
 
 Work-related health problems result in an economic loss of 4–6% of GDP for most countries.

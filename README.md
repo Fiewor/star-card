@@ -2,6 +2,19 @@ Table of Contents
 
 The Problem:
 
+Certain occupational risks, such as injuries, noise, carcinogenic agents, airborne particles and ergonomic risks account for a substantial part of the burden of chronic diseases: 37% of all cases of back pain, 16% of hearing loss, 13% of chronic obstructive pulmonary disease, 11% of asthma, 8% of injuries, 9% of lung cancer, 2% of leukaemia and 8% of depression.
+
+Annually 12.2 million people, mostly in developing countries, die from noncommunicable diseases while still of active working age.
+
+Work-related health problems result in an economic loss of 4–6% of GDP for most countries. The basic health services to prevent occupational and work-related diseases cost on average between US$ 18 and US$ 60 (purchasing power parity) per worker.
+
+About 70% of workers do not have any insurance to compensate them in case of occupational diseases and injuries.
+
+Research has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
+
+Reference:
+
+https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
 
 The Solution:
 

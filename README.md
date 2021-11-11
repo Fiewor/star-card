@@ -12,8 +12,13 @@ Work-related health problems result in an economic loss of 4–6% of GDP for mos
 The basic health services to prevent occupational and work-related diseases cost on average between US$ 18 and US$ 60 (purchasing power parity) per worker.
 About 70% of workers do not have any insurance to compensate them in case of occupational diseases and injuries.
 
+As of early October 2021, NOAA National Centers for Environmental Information states that the United States has experienced 18 weather/climate disasters with losses exceeding $1 billion each. 
+Year-to-date, this is a record high. 
+The average number of billion-dollar disasters per year is 7.
+
 
 Research has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
+
 Reference:
 
 https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health

@@ -11,12 +11,10 @@ Research has demonstrated that workplace health initiatives can help reduce sick
 Reference:
 
 https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
-Reference:
-
-https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
 
 The Solution:
-A  simple web application that empowers Frontline workers to submit evidences (images, videos) of hazards in record time to emergency response teams inorder to evaluate and mitigate disaster in record time.
+
+A  simple web application that empowers frontline workers(field doctors and nurses, delivery drivers, news reporters, security personnels e.t.c), to submit evidences (images, videos) of hazards in record time to emergency response teams inorder to evaluate and mitigate disaster in record time.
 
 
 

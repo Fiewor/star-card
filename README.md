@@ -4,9 +4,14 @@ The Problem:
 
 The Solution:
 
-The Technologies/Hardwares/Softwares/Libraries/Datasets/APIs/Services/Systems used:
+The Prototype Wireframe Document:
+
 
 The Architecture:
+
+
+The Technologies/Hardwares/Softwares/Libraries/Datasets/APIs/Services/Systems used:
+
 
 How it works:
 

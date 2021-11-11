@@ -31,9 +31,9 @@ A  simple web application that empowers frontline workers(field doctors and nurs
 
 The Architecture:
 
+The Prototype Wireframe Document
 
-The Prototype Wireframe Document:
-
+https://www.figma.com/file/xenIMomkzFMsNDt7nsR6j4
 
 The Technologies/Hardwares/Softwares/Libraries/Datasets/APIs/Services/Systems used:
 

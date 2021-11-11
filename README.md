@@ -1,6 +1,7 @@
 Table of Contents
 
 The Problem:
+
 While hazard reporting is critical for discovering and addressing hazards, many employees avoid it.
  
 The following are some reasons why workplace hazards go unreported:

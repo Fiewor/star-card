@@ -1,23 +1,21 @@
 Table of Contents
 
 The Problem:
+While hazard reporting is critical for discovering and addressing hazards, many employees avoid it.
+ 
+The following are some reasons why workplace hazards go unreported:
 
-Certain occupational risks, such as injuries, noise, carcinogenic agents, airborne particles and ergonomic risks account for a substantial part of the burden of chronic diseases: 37% of all cases of back pain, 16% of hearing loss, 13% of chronic obstructive pulmonary disease, 11% of asthma, 8% of injuries, 9% of lung cancer, 2% of leukaemia and 8% of depression.
+1. Employees lack the time
 
-Annually 12.2 million people, mostly in developing countries, die from noncommunicable diseases while still of active working age.
+2. Don't know how to report the hazard
 
-Work-related health problems result in an economic loss of 4–6% of GDP for most countries. The basic health services to prevent occupational and work-related diseases cost on average between US$ 18 and US$ 60 (purchasing power parity) per worker.
-
-About 70% of workers do not have any insurance to compensate them in case of occupational diseases and injuries.
-
-Research has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
+3. Are worried about getting into trouble if they report a hazard.
 
 Reference:
-
-https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
+https://www.helpside.com/3-reasons-employees-fail-report-workplace-hazards/
 
 The Solution:
-
+Assessing and reducing occupational risks; surveillance and improvement of the work environment, work organization, machinery and equipment.
 
 How it works:
 

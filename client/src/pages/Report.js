@@ -16,35 +16,37 @@ const Report = () => {
                             PH Free Service
                         </p>
                     </div>
-                </div> 
+                </div>  
 
                 <div className="side-bar-details">
                     <div>
-                        <p>
-                            <a href="#">
-                                <i class="fas fa-columns"></i> Dashboard
-                            </a>
-                        </p>
+                        <a 
+                            href="#"
+                        >
+                            <p style={{marginBottom: "1rem"}}>
+                                <i className="fas fa-columns"></i> Dashboard
+                            </p>
+                        </a>
 
-                        <p className="current">
-                            <a href="#">
-                                <i class="fas fa-user-cog"></i> Reports
-                            </a>
-                        </p>
+                        <a href="#">
+                            <p className="current">            
+                                <i className="fas fa-user-cog"></i> Reports                            
+                            </p>
+                        </a>
                     </div>
                 </div>  
 
                 <div className="sidebar-logout">
                     <div>
-                        <p>
+                        <p style= {{marginBottom: "1rem"}}>
                             <a href="#">
-                                <i class="fas fa-columns"></i> Notifications
+                                <i className="fas fa-columns"></i> Notifications
                             </a>
                         </p>
 
                         <p>
                             <a href="#">
-                                <i class="fas fa-sign-out-alt"></i> Logout
+                                <i className="fas fa-sign-out-alt"></i> Logout
                             </a>
                         </p>
                     </div>
@@ -63,17 +65,24 @@ const Report = () => {
                     </div>
 
                     <div className="main-page-nav-profile">
-                        <p>
-                            <i className="fab fa fa-facebook"></i>
-                            <i className="fab fa fa-facebook"></i>
-                        </p>
+                        <a href="#">
+                            <i className="fas fa-search"></i>
+                            <i className="far fa-bell"></i>
+                        </a>
 
-                        <div style={{display: 'flex'}}>
-                            <p>
+                        <div style={{display: 'flex', paddingLeft: "10px" }}>
+                            <p style={{paddingRight: "10px"}}>
                                 Daniel Riverdale
                             </p>
                             <div>
-                                Imge
+                                <p>
+                                    <a 
+                                        href="#"
+                                        className="logout"
+                                    >
+                                        <i className="fas fa-sign-out-alt"></i> Logout
+                                    </a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -143,7 +152,7 @@ const Report = () => {
 
                                     <div>
                                         <label>
-                                            Resources impacted
+                                            Resources at Risk
                                         </label>
                                         <input 
                                             type="text" 
@@ -153,29 +162,33 @@ const Report = () => {
 
                                     <div>
                                         <label>
-                                            Risk Probability (Low, Medium, High)
+                                            Risk Probability 
                                         </label>
-                                        <input 
-                                            type="text" 
-                                            className="risk-input-text"
-                                        />
+                                        <select>
+                                            <option>Select a risk probability</option>
+                                            <option>Low</option>
+                                            <option>Medium</option>
+                                            <option>High</option>
+                                        </select>
                                     </div>
                                 </div>
 
                                 <div className="risk-input-group-3">
                                     <div>
                                         <label>
-                                            Risk Impact(Low, Medium, High)
+                                            Risk Impact
                                         </label>
-                                        <input 
-                                            type="text" 
-                                            className="risk-input-text"
-                                        />
+                                        <select>
+                                            <option>Select a risk impact</option>
+                                            <option>Low</option>
+                                            <option>Medium</option>
+                                            <option>High</option>
+                                        </select>
                                     </div>
 
                                     <div>
                                         <label>
-                                            Existing Montrol Measure
+                                            Existing Control Measure
                                         </label>
                                         <input 
                                             type="text" 

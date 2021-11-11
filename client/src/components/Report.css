@@ -5,6 +5,15 @@
     background: #efefef;
 }
 
+.report a {
+    text-decoration: none;
+    color: #494949;
+}
+
+.report a:hover  {
+    color: #000000;
+}
+
 .report  p {
     font-size: 14px;
 }
@@ -13,6 +22,7 @@
     background: #ffffff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5rem 1rem;
     border-bottom: 1px solid #000000;
 }
@@ -39,9 +49,29 @@
 }
 
 .side-bar-details, .sidebar-logout {
-    margin: 10px;
-    padding: 10px;
+    /* margin: 10px; */
+    /* padding: 10px; */
     color: #494949;
+}
+
+.side-bar-details div, .sidebar-logout div{
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+
+/* Current  */
+.current {
+    background: #c5c7c9;
+    padding: 0.7rem 0;
+}
+
+.fa-search {
+    padding-right: 10px;
+}
+
+.fa-bell {
+    padding-right: 10px;
+    border-right: 1px solid #DFE0EB;
 }
 
 /* Risk form  */
@@ -84,6 +114,18 @@
 
 .risk-form-input form input {
     width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(46, 143, 255, 0.7);
+    background: transparent;
+    outline: #ffffff;
+}
+
+.risk-form-input form select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(46, 143, 255, 0.7);
+    background: transparent;
+    outline: #ffffff;
 }
 
 .risk-input-group-2 {

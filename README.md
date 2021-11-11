@@ -2,23 +2,17 @@ Table of Contents
 
 The Problem:
 
-While hazard reporting is critical for discovering and addressing hazards, many employees avoid it.
- 
-The following are some reasons why workplace hazards go unreported:
-
-1. Employees lack the time
-
-2. Don't know how to report the hazard
-
-3. Are worried about getting into trouble if they report a hazard.
 
 Reference:
-https://www.helpside.com/3-reasons-employees-fail-report-workplace-hazards/
+
+https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
+Reference:
+
+https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
 
 The Solution:
-Assessing and reducing occupational risks; surveillance and improvement of the work environment, work organization, machinery and equipment.
-
-How it works:
+One of such initiatives we've considered is working on, is the development of a simple web app that enables Frontline workers to immediately capture and report hazards to emergency response teams for evaluation and solutions. 
+How it
 
 
 The Architecture:

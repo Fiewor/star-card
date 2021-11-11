@@ -11,7 +11,7 @@ Reference:
 https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
 
 The Solution:
-One of such initiatives we've considered is working on, is the development of a simple web app that enables Frontline workers to immediately capture and report hazards to emergency response teams for evaluation and solutions. 
+One of such initiatives we've considered is working on, is the development of a simple web app that enables Frontline workers to use internet-enabled devices to immediately capture and report hazards to emergency response teams for evaluation and solutions.. 
 How it
 
 

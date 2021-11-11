@@ -37,9 +37,9 @@ The Prototype Wireframe Document:
 
 The Technologies/Hardwares/Softwares/Libraries/Datasets/APIs/Services/Systems used:
 
-Demo Video:
+Demo Video Link:
 
-Live Demo:
+Live Demo URL:
 
 Authors:
 

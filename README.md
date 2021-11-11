@@ -45,7 +45,7 @@ Road Map: Possiblity of frontline workers to report hazards to emergency respons
 
 Safety verification, authentication and approval using Blockchain technologies.
 
-Relevant safety Policy and  safety compliance recommendations via Machine Learning technologies.
+Relevant Safety policy and  safety compliance recommendations via Machine Learning and federated learning technologies.
 
 Authors: Chukwunonso Richard Iwenor.
 

@@ -1,0 +1,147 @@
+.report {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 1rem;
+    background: #efefef;
+}
+
+.report  p {
+    font-size: 14px;
+}
+
+.main-page-nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #000000;
+}
+
+.main-page-nav .main-page-nav-profile {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-logo {
+    /* border-bottom: 1px solid #000000; */
+}
+
+.sidebar-logo div {
+    margin: 1rem;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.side-bar-details, .sidebar-logout {
+    margin: 10px;
+    padding: 10px;
+    color: #494949;
+}
+
+/* Risk form  */
+.risk-form  {
+    padding: 2rem;
+}
+
+.risk-form .risk-form-div .risk-form-title {
+    margin: 2rem 0;
+    padding: 1rem 15px;
+    box-shadow: #2E8FFF 0px 10px 10px -10px;
+    background: #ffffff;
+}
+
+.risk-form .risk-form-div .risk-form-title h3 {
+    color: #2E8FFF;
+    font-size: 24px;
+}
+
+.risk-input-group-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+
+.risk-input-group-1 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-form-input label {
+    display: block;
+    font-size: 14px;
+}
+
+.risk-form-input form div {
+    margin-bottom: 1rem;
+}
+
+.risk-form-input form input {
+    width: 100%;
+}
+
+.risk-input-group-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.risk-input-group-2 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-input-group-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.risk-input-group-3 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-input-group-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.risk-input-group-4 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-input-group-5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.risk-input-group-5 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-form-btn button {
+    width: 100%;
+    background: #2E8FFF;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+.risk-form-btn button:hover {
+    background: #146ed6;
+}

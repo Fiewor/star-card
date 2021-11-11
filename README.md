@@ -4,7 +4,7 @@ The Problem:
 
 The Solution:
 
-The Technology(Libraries,Datasets,APIs,Services,Systems):
+The Technologies/Hardwares/Softwares/Libraries/Datasets/APIs/Services/Systems used:
 
 The Architecture:
 

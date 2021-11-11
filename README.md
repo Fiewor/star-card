@@ -42,9 +42,13 @@ Demo Video Link:
 Live Demo URL:
 
 Authors: Chukwunonso Richard Iwenor.
+
 Victory Chukwuma.
+
 Israel Chidera Edeh.
+
 John Fiewor.
+
 Ani Precious Ebuka.
 
 Licenses:

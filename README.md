@@ -33,7 +33,7 @@ Research has demonstrated that workplace health initiatives can help reduce sick
 ## The Solution:
 
 A  simple web application that;
-1. Enhances safety and productivity of heros(field doctors and nurses, delivery drivers, news reporters, hardware engineers, security personnels e.t.c) by empowering them to submit evidences (images, videos) of hazards in record time to emergency response teams inorder to evaluate and mitigate disasters in record time.
+1. Enhances safety and productivity of heros(field doctors and nurses, delivery drivers, news reporters, hardware engineers, security personnels e.t.c) by empowering them to submit text messages with evidences (images, videos) of hazards in record time to emergency response teams inorder to evaluate and mitigate disasters in record time.
 
 2. Enables other heros such as frontline security software developers to recieve, visualize and evaluate notifications about bugs from various apps on the same dashboard in record time.
 Software users can reports bugs via  text, screenshots, screencasts, silent and voiced screen recording of such bugs.

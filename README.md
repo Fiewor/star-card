@@ -61,10 +61,10 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 - Possibilities for connecting our web app to non-smart phones via SMS, USD and toll phone call services.
 
 ## The Team
-- Chukwunonso Richard Iwenor
-- Victory Chukwuma
-- Israel Chidera Edeh
-- [John Fiewor](github.com/Fiewor)
-- Ani Precious Ebuka.
+- [Chukwunonso Richard Iwenor](https://github.com/RichardTalented)
+- [Victory Chukwuma]()
+- [Israel Chidera Edeh](https://github.com/IsraelChidera)
+- [John Fiewor](https://github.com/Fiewor)
+- [Ani Precious Ebuka]()
 
 ## Licenses:

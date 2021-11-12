@@ -61,8 +61,7 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 - Possibilities for language translations.
 - Map, Weather and Samsung API integrations.
 - Possibilities for speech-to-text/text-to-speech  input/output.
-- Possibilities for connecting our web app to non-smart phones via SMS, USD and toll phone call services.
-
+- Possibilities for using the web app to process hazard reports acquired from agents via sms, ussd and phone calls.
 ## The Team
 - [Chukwunonso Richard Iwenor](https://github.com/RichardTalented)
 - [Victory Chukwuma]()

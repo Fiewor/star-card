@@ -1,13 +1,22 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../components/Report.css';
 import Sidebar from '../components/Sidebar';
 
 const Report = () => {
     // const [file, setFile] = useState("")
+    const [width, setWidth] = useState(window.innerWidth)
+    const breakpoint = 700
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize)
+        return () => {
+        window.removeEventListener("resize", handleWindowResize)
+        }
+    }, [])
 
     return (
         <section className="report">
-            < Sidebar />
+            {(width > breakpoint) && < Sidebar />}
 
             <div className="main-page">
                 <div className="main-page-nav">

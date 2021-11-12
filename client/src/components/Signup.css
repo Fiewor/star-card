@@ -1,5 +1,4 @@
 .signup {
-    
 }
 
 .signup-bg {
@@ -34,12 +33,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .signup-form {
     margin: auto 4rem;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,4 +79,39 @@
 .signup-btn {
     padding: 5px 10px 5px 10px;
     width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1em 0;
+}
+
+@media (max-width: 425px) {
+    .signup-bg {
+        display: none;
+    }
+    .signup-container {
+        padding-top: 1em;
+    }
+    .signup-form div form {
+        width: 100%;
+    }
+    .signup-form div h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .signup-form div form input {
+        border-bottom: 1px solid #000;
+    }
+    .signup-btn {
+        padding: 5px 10px 5px 10px;
+        width: 50%;
+        justify-self: center;
+    }
+    .sign-up-link{
+        font-size: 0.7rem;
+    }
+    .forgot-pass{
+        text-align: start;
+        font-size: 11px;
+    }
 }

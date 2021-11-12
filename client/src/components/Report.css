@@ -14,7 +14,7 @@
     color: #000000;
 }
 
-.report  p {
+.report p {
     font-size: 14px;
 }
 
@@ -31,22 +31,7 @@
     display: flex;
 }
 
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
 
-.sidebar-logo {
-    /* border-bottom: 1px solid #000000; */
-}
-
-.sidebar-logo div {
-    margin: 1rem;
-    padding: 15px;
-    background: #fff;
-    border-radius: 10px;
-}
 
 .side-bar-details, .sidebar-logout {
     /* margin: 10px; */

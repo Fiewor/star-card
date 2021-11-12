@@ -45,7 +45,16 @@ Road Map: Possiblity of frontline workers to report hazards to emergency respons
 
 Safety verification, authentication and approval using Blockchain technologies.
 
-Relevant Safety policy and  safety compliance recommendations via Machine Learning and federated learning technologies.
+Relevant Safety policy and  safety compliance recommendations via Machine Learning, federated learning technologies and natural language processing.
+
+Possibilities for language translations.
+
+Map, Weather and Samsung API integrations.
+
+Possibilities for speech-to-text/text-to-speech  input/output.
+
+Possibilities for connecting our web app to non-smart phones via SMS, USD and toll phone call services.
+
 
 Authors: Chukwunonso Richard Iwenor.
 

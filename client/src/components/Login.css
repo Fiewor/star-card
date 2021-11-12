@@ -91,17 +91,16 @@
         display: none;
     }
     .login-container {
-        padding: 1em 1em 0;
+        padding-top: 1em;
     }
     .login-form div form {
         width: 100%;
     }
     .login-form div h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
     .login-form div form input {
-        width: 80%;
         border-bottom: 1px solid #000;
     }
     .login-btn {

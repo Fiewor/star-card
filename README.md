@@ -41,7 +41,7 @@ Demo Video Link:
 
 Live Demo URL:
 
-Road Map: Possiblity of frontline workers to report hazards to emergency response team via Augmented Reality and Livestreaming Technologies.
+Road Map: Possiblity of frontline workers to report hazards to emergency response team via Computer vision,  Augmented Reality and Livestreaming Technologies.
 
 Safety verification, authentication and approval using Blockchain technologies.
 

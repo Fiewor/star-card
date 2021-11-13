@@ -35,8 +35,8 @@ const Report = () => {
                             <i className="far fa-bell"></i>
                         </a>
 
-                        <div style={{display: 'flex', paddingLeft: "10px" }}>
-                            <p style={{paddingRight: "10px"}}>
+                        <div className="profile-user">
+                            <p>
                                 Daniel Riverdale
                             </p>
                             <div>
@@ -175,12 +175,14 @@ const Report = () => {
 
                                     <div>
                                         <label>
-                                            Hazard Rating (Low, Medium, High)
+                                            Hazard Rating
                                         </label>
-                                        <input 
-                                            type="text" 
-                                            className="risk-input-text"
-                                        />
+                                        <select>
+                                            <option>Select the hazard rating</option>
+                                            <option>Low</option>
+                                            <option>Medium</option>
+                                            <option>High</option>
+                                        </select>
                                     </div>
                                 </div>
 

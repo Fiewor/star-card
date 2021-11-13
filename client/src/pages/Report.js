@@ -78,7 +78,8 @@ const Report = () => {
                                             Date
                                         </label>
                                         <input 
-                                            type="text" 
+                                            type="date"
+                                            value="2021-01-30"
                                             className="risk-input-text"
                                         />
                                     </div>
@@ -88,8 +89,7 @@ const Report = () => {
                                             Time
                                         </label>
                                         <input 
-                                            type="text" 
-                                            className="risk-input-text"
+                                            type="time"
                                         />
                                     </div>
 
@@ -144,7 +144,7 @@ const Report = () => {
                                             Risk Impact
                                         </label>
                                         <select>
-                                            <option>Select a risk impact</option>
+                                            <option>Select the level of the risk impact</option>
                                             <option>Low</option>
                                             <option>Medium</option>
                                             <option>High</option>

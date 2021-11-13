@@ -72,7 +72,7 @@ const Signup = () => {
                                 Star Card
                             </h3>
                             <p>
-                                secure your 100% risk assesment data entry
+                                Secure your risk assesment data entry
                             </p>
                         </div>
                     </div>

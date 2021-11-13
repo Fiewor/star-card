@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .report {
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -29,6 +33,14 @@
 
 .main-page-nav .main-page-nav-profile {
     display: flex;
+}
+
+.main-page-nav .main-page-nav-profile .profile-user{
+    display: flex;
+    padding-left: 10px;
+}
+.main-page-nav .main-page-nav-profile .profile-user p{
+    padding-right: 10px;
 }
 
 .side-bar-details, .sidebar-logout {
@@ -76,7 +88,7 @@
 
 .risk-input-group-1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
 }
 
@@ -113,7 +125,7 @@
 
 .risk-input-group-2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
 }
 
@@ -125,7 +137,7 @@
 
 .risk-input-group-3 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1rem;
 }
 
@@ -171,12 +183,18 @@
     background: #146ed6;
 }
 
-@media screen and (max-width: 425px) {
-    main-page-nav{
-        flex-direction: column;
-        padding: 0;
+@media screen and (max-width: 768px) {
+    .main-page{
+        width: 100vw;
     }
-    main-page-nav div h3{
-        font-size: 0.1rem;
+    .main-page-nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-page-nav div:first-child{
+        padding-bottom: 1rem;
+    }
+    .risk-form  {
+        padding: 1rem;
     }
 }

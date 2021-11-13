@@ -171,11 +171,7 @@
     background: #146ed6;
 }
 
-@media (max-width: 425px) {
-    .report {
-        grid-template-columns: 0fr 0fr;
-        grid-gap: 1rem;
-    }
+@media screen and (max-width: 425px) {
     main-page-nav{
         flex-direction: column;
         padding: 0;

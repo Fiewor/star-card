@@ -86,7 +86,7 @@
     padding: 1em 0;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .login-bg {
         display: none;
     }

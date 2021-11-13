@@ -72,7 +72,7 @@ const Signup = () => {
                                 Star Card
                             </h3>
                             <p>
-                                Secure your risk assesment data entry
+                                Keep heros safe and more productive by giving them a web-based platform to report hazards and get real-time prioritized response
                             </p>
                         </div>
                     </div>

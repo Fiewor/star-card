@@ -9,7 +9,7 @@ const Login = () => {
                 <div className="login-container">
                     <div className="login-form">
                         <div className="login-form-div">
-                            <h1>Welcome Back</h1>
+                            <h1>Welcome</h1>
                             <form 
                                 action=""
                                 className=""

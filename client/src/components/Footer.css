@@ -10,12 +10,12 @@ footer {
     align-items: center;
 }
 
-.social-container {
-    display: flex;
-    justify-content: space-around;
+.social-container{
+    
 }
 
 .social-container p {
+    display: block;
     color: #fff;
 }
 
@@ -25,9 +25,15 @@ footer {
 }
 
 .social-links i {
-    background: #3838e0;
+    background: #2E8FFF;
     color: #fff;
     border-radius: 50%;
+    padding: 1rem 1.1rem;
+    margin: 0.5rem;
+}
+
+.social-links i:first-of-type{
+    margin-left: 0;
 }
 
 .secondary-container{
@@ -43,8 +49,13 @@ footer {
     font-size: 0.7rem;
 }
 
-hr {
-    border-bottom: 3px blue solid;
-    padding: 2rem;
-    width: 90vw;
+a:hover{
+    color: #8f8f8f;
+}
+
+@media screen and (max-width: 768px) {
+    .social-links i {
+        padding: 0.3rem 0.4rem;
+        margin: 0.2rem;
+    }
 }

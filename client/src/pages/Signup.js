@@ -58,7 +58,7 @@ const Signup = () => {
                                 </div>
 
                                 <p className="sign-up-link">
-                                    Already have an account? <Link to="/">
+                                    Already have an account? <Link to="/login">
                                         Login . . .
                                     </Link>  
                                 </p>

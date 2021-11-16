@@ -1,0 +1,55 @@
+.header-container{
+    background: #cefcff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 2rem;
+    margin: 0 2rem;
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 0.5rem;
+}
+
+.links button{
+    background: aqua;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    margin-right: 1em;
+    font-size: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        font-size: 1.5rem;
+    }
+    .links:first-of-type{
+        display: none;
+    }
+    .links button{
+        font-size: 0.8rem;
+        margin-right: 0;
+    }
+}

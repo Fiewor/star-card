@@ -1,8 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../components/Signup.css';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const Signup = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        organization: '',
+        industry: '',
+        password: '',
+        password_confirmation: '',
+    });    
+
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value})
+    }
+
+    const handleSubmit = (e) => {
+        console.log(formData);
+        e.preventDefault();
+
+        const config = {
+            headers: { 
+                'Accept': 'application/json', 
+            }
+        }
+
+        axios.post("https://star-card.herokuapp.com/api/register", formData, config)
+        .then(function (response) {
+            
+            console.log("success", formData)
+            console.log(response)
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }
+
+
     return (
         <>
             <section className="signup">
@@ -18,14 +56,8 @@ const Signup = () => {
                                     <input 
                                         type="text"
                                         placeholder="Name"
-                                        required
-                                    />
-                                </div>
-
-                                <div>
-                                    <input 
-                                        type="text"
-                                        placeholder="Organization"
+                                        name="name"
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -34,6 +66,50 @@ const Signup = () => {
                                     <input 
                                         type="email"
                                         placeholder="Email"
+                                        name="email"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <input 
+                                        type="text"
+                                        name="phone"
+                                        placeholder="Phone Number"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <input 
+                                        type="text"
+                                        placeholder="Organization Name"
+                                        name="organization"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <input 
+                                        type="text"
+                                        placeholder="Industry"
+                                        name="industry"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+
+                                
+
+                                <div>
+                                    <input 
+                                        type="password"
+                                        placeholder="Password"
+                                        name="password"
+                                        onChange={handleChange}
                                         required
                                     />
                                 </div>
@@ -41,7 +117,9 @@ const Signup = () => {
                                 <div>
                                     <input 
                                         type="password"
-                                        placeholder="Password"
+                                        placeholder="Confirm Password"
+                                        name="password_confirmation"
+                                        onChange={handleChange}
                                         required
                                     />
                                     <p className="forgot-pass">
@@ -52,7 +130,10 @@ const Signup = () => {
                                 </div>
 
                                 <div>
-                                    <button className="signup-btn">
+                                    <button 
+                                        className="signup-btn"
+                                        onClick={handleSubmit}
+                                    >
                                         Sign up
                                     </button>
                                 </div>

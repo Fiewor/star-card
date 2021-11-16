@@ -1,9 +1,46 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../components/Report.css';
 import Sidebar from '../components/Sidebar';
+import axios from 'axios';
 
 const Report = () => {
     // const [file, setFile] = useState("")
+    const [Id, setId] = useState("");
+    const [date, setDate] = useState("");
+    const [location, setLocation] = useState("");
+
+    useEffect(() => {
+
+    })
+
+    // axios({
+    //     method: 'post',
+    //     url: 'https://star-card.herokuapp.com/api/register',
+    //     data: {
+    //       firstName: 'shedrack',
+    //       lastName: 'akintayo',
+    //     }
+    // }).then(response => {
+    //     console.log('Date created: ', response);
+    // }).catch((error) => {
+    //     console.log("error: ", error);
+    // })
+
+    axios.post('https://star-card.herokuapp.com/api/create_card', {
+        Id: Id,
+        date: date,
+        location: location
+    })
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
 
     return (
         <section className="report">
@@ -61,6 +98,8 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+                                            onChange={(e) => setId(e.target.value)}
+                                            required
                                         />
                                     </div>
 
@@ -71,6 +110,8 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+                                            onChange={(e) => setDate(e.target.value)}
+                                            required
                                         />
                                     </div>
 
@@ -91,6 +132,8 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+                                            onChange={(e) => setLocation(e.target.value)}
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -207,7 +250,9 @@ const Report = () => {
                                 </div>
 
                                 <div className="risk-form-btn">
-                                    <button>
+                                    <button
+                                        onClick={handleSubmit}
+                                    >
                                         Submit
                                     </button>
                                 </div>

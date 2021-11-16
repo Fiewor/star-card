@@ -46,9 +46,9 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 
 <!-- The Technologies/Hardwares/Softwares/Libraries/Datasets/APIs/Services/Systems used: -->
 ## Technologies
-- IBM ****
-- JavaScript
-- PHP
+- IBM Cloud
+- React
+- PHP(Laravel)
 
 ## Demo Video Link:
 

@@ -1,11 +1,10 @@
 .login {
-    
 }
 
 .login-bg {
     /* flex: 2; */
     height: 100vh;
-    width: 60%;
+    width: 100%;
     background: url('../assets/bg_login.png') no-repeat center center/cover;
 }
 
@@ -15,39 +14,39 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: #fff;
+    color: #000;
 }
 
 .login-bg div h3 {
     font-size: 4rem;
-    font-weight: 100;
-    text-shadow: 1px 1px 1px #000;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 3px 1px #000;
 }
 
 .login-bg div p {
-    font-weight: 100;
-    text-shadow: 1px 1px 1px #000;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #fff;
     font-size: 18px;
+    color: #000;
 }
 
 .login-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .login-form {
-    margin: auto 3rem;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.login-form-div {
-    /* padding: 2rem; */
-}
+/* .login-form-div {
+    padding: 2rem;
+} */
 
 .login-form div h1 {
     text-align: left;
@@ -60,7 +59,7 @@
 }
 
 .login-form div form {
-    width: 150%;
+    width: 100%;
 }
 
 .login-form div form input {
@@ -81,4 +80,39 @@
 .login-btn {
     padding: 5px 10px 5px 10px;
     width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    .login-bg {
+        display: none;
+    }
+    .login-container {
+        padding-top: 1em;
+    }
+    .login-form div form {
+        width: 100%;
+    }
+    .login-form div h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .login-form div form input {
+        border-bottom: 1px solid #000;
+    }
+    .login-btn {
+        padding: 5px 10px 5px 10px;
+        width: 50%;
+        justify-self: center;
+    }
+    .sign-up-link{
+        font-size: 0.7rem;
+    }
+    .forgot-pass{
+        text-align: start;
+        font-size: 11px;
+    }
 }

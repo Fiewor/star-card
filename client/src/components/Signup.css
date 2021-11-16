@@ -1,11 +1,10 @@
 .signup {
-    
 }
 
 .signup-bg {
     /* flex: 2; */
     height: 100vh;
-    width: 60%;
+    width: 100%;
     background: url('../assets/bg_login.png') no-repeat center center/cover;
 }
 
@@ -13,33 +12,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     height: 100%;
     color: #fff;
 }
 
 .signup-bg div h3 {
     font-size: 4rem;
-    font-weight: 100;
-    text-shadow: 1px 1px 1px #000;
+    font-weight: 400;
+    text-shadow: 1px 3px 1px #000;
 }
 
 .signup-bg div p {
-    font-weight: 100;
-    text-shadow: 1px 1px 1px #000;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px #fff;
     font-size: 18px;
+    color: #000;
 }
 
 .signup-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .signup-form {
-    margin: auto 4rem;
-    /* width: 100%; */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +58,7 @@
 }
 
 .signup-form div form {
-    width: 150%;
+    width: 100%;
 }
 
 .signup-form div form input {
@@ -81,4 +79,39 @@
 .signup-btn {
     padding: 5px 10px 5px 10px;
     width: 100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+    .signup-bg {
+        display: none;
+    }
+    .signup-container {
+        padding-top: 1em;
+    }
+    .signup-form div form {
+        width: 100%;
+    }
+    .signup-form div h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .signup-form div form input {
+        border-bottom: 1px solid #000;
+    }
+    .signup-btn {
+        padding: 5px 10px 5px 10px;
+        width: 50%;
+        justify-self: center;
+    }
+    .sign-up-link{
+        font-size: 0.7rem;
+    }
+    .forgot-pass{
+        text-align: start;
+        font-size: 11px;
+    }
 }

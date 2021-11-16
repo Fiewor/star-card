@@ -41,10 +41,19 @@ const Report = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
     }
+    const [width, setWidth] = useState(window.innerWidth)
+    const breakpoint = 700
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize)
+        return () => {
+        window.removeEventListener("resize", handleWindowResize)
+        }
+    }, [])
 
     return (
         <section className="report">
-            < Sidebar />
+            {(width > breakpoint) && < Sidebar />}
 
             <div className="main-page">
                 <div className="main-page-nav">
@@ -63,8 +72,8 @@ const Report = () => {
                             <i className="far fa-bell"></i>
                         </a>
 
-                        <div style={{display: 'flex', paddingLeft: "10px" }}>
-                            <p style={{paddingRight: "10px"}}>
+                        <div className="profile-user">
+                            <p>
                                 Daniel Riverdale
                             </p>
                             <div>
@@ -108,7 +117,8 @@ const Report = () => {
                                             Date
                                         </label>
                                         <input 
-                                            type="text" 
+                                            type="date"
+                                            value="2021-01-30"
                                             className="risk-input-text"
                                             onChange={(e) => setDate(e.target.value)}
                                             required
@@ -120,8 +130,7 @@ const Report = () => {
                                             Time
                                         </label>
                                         <input 
-                                            type="text" 
-                                            className="risk-input-text"
+                                            type="time"
                                         />
                                     </div>
 
@@ -178,7 +187,7 @@ const Report = () => {
                                             Risk Impact
                                         </label>
                                         <select>
-                                            <option>Select a risk impact</option>
+                                            <option>Select the level of the risk impact</option>
                                             <option>Low</option>
                                             <option>Medium</option>
                                             <option>High</option>
@@ -209,12 +218,14 @@ const Report = () => {
 
                                     <div>
                                         <label>
-                                            Hazard Rating (Low, Medium, High)
+                                            Hazard Rating
                                         </label>
-                                        <input 
-                                            type="text" 
-                                            className="risk-input-text"
-                                        />
+                                        <select>
+                                            <option>Select the hazard rating</option>
+                                            <option>Low</option>
+                                            <option>Medium</option>
+                                            <option>High</option>
+                                        </select>
                                     </div>
                                 </div>
 

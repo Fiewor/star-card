@@ -1,18 +1,52 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../components/Dashboard.css';
 import Sidebar from '../components/Sidebar';
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
+import axios from 'axios';
 
 const Dashboard = () => {
+    const [organisationDetails, setOrganisationDetails] = useState("");
+    const history = useHistory();
+    
+    const config = {
+        headers: { 
+            'Accept': 'application/json', 
+            'Authorization': JSON.parse(localStorage.getItem('token'))
+        }
+    }
+
+    useEffect(() => {
+        axios.get('https://star-card.herokuapp.com/api/organization_details', config)
+        .then(function (response) {
+            console.log("success");
+            console.log(response);
+            console.log(setOrganisationDetails(response.data.data.organization));
+            
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }, [])
+
+    const handleLogout = (e) => {
+
+        localStorage.clear();
+        history.push("/login")
+
+    }
+
     return (
         <section className="dashboard">
-            < Sidebar />
+            < Sidebar organisationDetails={organisationDetails} />
 
             <div className="main-page">
                 <div className="main-page-nav">
                     <div>
                         <h3>
-                            Welcome back, Daniel
+                            Welcome back, <span>
+                                {organisationDetails}
+                            </span>
+
                         </h3>
                         <p>
                             Enter your risk assessment report on the job you just conmpleted
@@ -20,24 +54,22 @@ const Dashboard = () => {
                     </div>
 
                     <div className="main-page-nav-profile">
-                        <a href="#">
-                            <i className="fas fa-search"></i>
-                            <i className="far fa-bell"></i>
-                        </a>
+                        <Link to="/createmployee">
+                            <p>Create an employee</p>
+                        </Link>
 
                         <div style={{display: 'flex', paddingLeft: "10px" }}>
                             <p style={{paddingRight: "10px"}}>
-                                Daniel Riverdale
+                                {organisationDetails}
                             </p>
                             <div>
-                                <p>
-                                    <a 
-                                        href="#"
-                                        className="logout"
-                                    >
-                                        <i className="fas fa-sign-out-alt"></i> Logout
-                                    </a>
-                                </p>
+                                <button
+                                    className="logout"
+                                    onClick={handleLogout}
+                                >                                    
+                                    <i className="fas fa-sign-out-alt"></i> 
+                                    <span>Logout</span>
+                                </button>
                             </div>
                         </div>
                     </div>

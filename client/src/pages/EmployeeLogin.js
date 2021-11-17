@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import '../components/Login.css';
+import '../components/EmployeeLogin.css';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 
-const Login = () => { 
+const EmployeeLogin = () => { 
     const history = useHistory();
 
     const [formData, setFormData] = useState({
-        email: "",
+        employee_email: "",
         password: ""
     })
 
@@ -24,12 +24,12 @@ const Login = () => {
             }
         }
 
-        axios.post("https://star-card.herokuapp.com/api/login", formData, config)
+        axios.post("https://star-card.herokuapp.com/api/employee_login", formData, config)
         .then(function (response) {
-            console.log("success", formData)
+            console.log("success employee Login", formData)
             console.log(response);
-            localStorage.setItem('token', JSON.stringify(response.data.access_token));
-            history.push("/dashboard")
+            // localStorage.setItem('token', JSON.stringify(response.data.access_token));
+            history.push("/report")
         })
         .catch(function (error) {
             console.log(error);
@@ -38,11 +38,11 @@ const Login = () => {
 
     return (
         <>
-            <section className="login">
-                <div className="login-container">
-                    <div className="login-form">
-                        <div className="login-form-div">
-                            <h1>Welcome</h1>
+            <section className="employLogin">
+                <div className="employLogin-container">
+                    <div className="employLogin-form">
+                        <div className="employLogin-form-div">
+                            <h1>Employee Login</h1>
                             <form 
                                 action=""
                                 className=""
@@ -51,7 +51,7 @@ const Login = () => {
                                     <input 
                                         type="email"
                                         placeholder="Email"
-                                        name="email"
+                                        name="employee_email"
                                         onChange={handleChange}
                                         required
                                     />
@@ -65,32 +65,22 @@ const Login = () => {
                                         onChange={handleChange}
                                         required
                                     />
-                                    <p className="forgot-pass">
-                                        <a href="#">
-                                            Forgot password ?
-                                        </a>
-                                    </p>
                                 </div>
 
                                 <div>
                                     <button 
-                                        className="login-btn"
+                                        className="employLogin-btn"
                                         onClick={handleSubmit}
                                     >
                                         Sign In
                                     </button>
                                 </div>
 
-                                <p className="sign-up-link">
-                                    You don't have an account? <Link to="/signup">
-                                        Sign up here . . .
-                                    </Link>  
-                                </p>
                             </form>
                         </div>
                     </div>
 
-                    <div className="login-bg">
+                    <div className="employeeLogin-bg">
                         <div>
                             <h3>
                                 Star Card
@@ -106,4 +96,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default EmployeeLogin

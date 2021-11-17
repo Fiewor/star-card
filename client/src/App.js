@@ -8,8 +8,11 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Report from './pages/Report';
 import Dashboard from './pages/Dashboard';
 import DashboardResult from './pages/DashboardResult';
+<<<<<<< HEAD
 import CreateEmployee from './pages/CreateEmployee';
 import EmployeeLogin from './pages/EmployeeLogin';
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 
 function App() {
   return (
@@ -45,6 +48,7 @@ function App() {
           <Route path="/result">
             < DashboardResult />
           </Route>
+<<<<<<< HEAD
 
           <Route path="/createmployee">
             < CreateEmployee />
@@ -53,6 +57,8 @@ function App() {
           <Route path="/employeelogin">
             < EmployeeLogin />
           </Route>
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
         </Switch>
       </Router>
   

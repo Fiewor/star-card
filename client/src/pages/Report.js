@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import '../components/Report.css';
 import Sidebar from '../components/Sidebar';
 import axios from 'axios';
+<<<<<<< HEAD
 import {useHistory} from 'react-router-dom';
 
 const Report = () => {
@@ -71,6 +72,49 @@ const Report = () => {
 
     const [width, setWidth] = useState(window.innerWidth)
     const breakpoint = 700
+=======
+
+const Report = () => {
+    // const [file, setFile] = useState("")
+    const [Id, setId] = useState("");
+    const [date, setDate] = useState("");
+    const [location, setLocation] = useState("");
+
+    useEffect(() => {
+
+    })
+
+    // axios({
+    //     method: 'post',
+    //     url: 'https://star-card.herokuapp.com/api/register',
+    //     data: {
+    //       firstName: 'shedrack',
+    //       lastName: 'akintayo',
+    //     }
+    // }).then(response => {
+    //     console.log('Date created: ', response);
+    // }).catch((error) => {
+    //     console.log("error: ", error);
+    // })
+
+    axios.post('https://star-card.herokuapp.com/api/create_card', {
+        Id: Id,
+        date: date,
+        location: location
+    })
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+    const [width, setWidth] = useState(window.innerWidth)
+    const breakpoint = 768
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
     useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
         window.addEventListener("resize", handleWindowResize)
@@ -87,9 +131,13 @@ const Report = () => {
                 <div className="main-page-nav">
                     <div>
                         <h3>
+<<<<<<< HEAD
                             Welcome back, <span>
                                 {employee}
                             </span>
+=======
+                            Welcome back, Daniel
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                         </h3>
                         <p>
                             Enter your risk assessment report on the job you just conmpleted
@@ -104,6 +152,7 @@ const Report = () => {
 
                         <div className="profile-user">
                             <p>
+<<<<<<< HEAD
                                 {employee}
                             </p>
                             <div>
@@ -116,6 +165,19 @@ const Report = () => {
                                         Logout    
                                     </span>                                   
                                 </button>
+=======
+                                Daniel Riverdale
+                            </p>
+                            <div>
+                                <p>
+                                    <a 
+                                        href="#"
+                                        className="logout"
+                                    >
+                                        <i className="fas fa-sign-out-alt"></i> Logout
+                                    </a>
+                                </p>
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                             </div>
                         </div>
                     </div>
@@ -137,7 +199,12 @@ const Report = () => {
                                         </label>
                                         <input 
                                             type="text" 
+<<<<<<< HEAD
                                             className="risk-input-text"                                            
+=======
+                                            className="risk-input-text"
+                                            onChange={(e) => setId(e.target.value)}
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                             required
                                         />
                                     </div>
@@ -148,14 +215,21 @@ const Report = () => {
                                         </label>
                                         <input 
                                             type="date"
+<<<<<<< HEAD
                                             // value="2021-01-30"
                                             className="risk-input-text"                                                                                    
+=======
+                                            value="2021-01-30"
+                                            className="risk-input-text"
+                                            onChange={(e) => setDate(e.target.value)}
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                             required
                                         />
                                     </div>
 
                                     <div>
                                         <label>
+<<<<<<< HEAD
                                             location
                                         </label>
                                         <input 
@@ -163,11 +237,18 @@ const Report = () => {
                                             name="location"
                                             onChange={handleChange}
                                             required    
+=======
+                                            Time
+                                        </label>
+                                        <input 
+                                            type="time"
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         />
                                     </div>
 
                                     <div>
                                         <label>
+<<<<<<< HEAD
                                             Hazard Description
                                         </label>
                                         <input 
@@ -175,6 +256,14 @@ const Report = () => {
                                             className="risk-input-text"  
                                             name="hazard_description"
                                             onChange={handleChange}                                              
+=======
+                                            Location
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            className="risk-input-text"
+                                            onChange={(e) => setLocation(e.target.value)}
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                             required
                                         />
                                     </div>
@@ -183,24 +272,39 @@ const Report = () => {
                                 <div className="risk-input-group-2">
                                     <div>
                                         <label>
+<<<<<<< HEAD
                                             Resources at Risk
+=======
+                                            Hazard Description
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         </label>
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+<<<<<<< HEAD
                                             name="risked_resource"
                                             onChange={handleChange} 
                                             required   
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         />
                                     </div>
 
                                     <div>
                                         <label>
+<<<<<<< HEAD
                                             Time
                                         </label>
                                         <input 
                                             type="time" 
                                             className="risk-input-text"                                        
+=======
+                                            Resources at Risk
+                                        </label>
+                                        <input 
+                                            type="text" 
+                                            className="risk-input-text"
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         />
                                     </div>
 
@@ -208,11 +312,15 @@ const Report = () => {
                                         <label>
                                             Risk Probability 
                                         </label>
+<<<<<<< HEAD
                                         <select
                                             name="probability"
                                             onChange={handleChange}    
                                             required
                                         >
+=======
+                                        <select>
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                             <option>Select a risk probability</option>
                                             <option>Low</option>
                                             <option>Medium</option>
@@ -226,11 +334,15 @@ const Report = () => {
                                         <label>
                                             Risk Impact
                                         </label>
+<<<<<<< HEAD
                                         <select
                                             name="impact"
                                             onChange={handleChange}    
                                             required
                                         >
+=======
+                                        <select>
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                             <option>Select the level of the risk impact</option>
                                             <option>Low</option>
                                             <option>Medium</option>
@@ -245,9 +357,12 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+<<<<<<< HEAD
                                             name="existing_control"
                                             onChange={handleChange}    
                                             required
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         />
                                     </div>
                                 </div>
@@ -260,9 +375,12 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+<<<<<<< HEAD
                                             name="existing_prevention"
                                             onChange={handleChange}    
                                             required
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         />
                                     </div>
 
@@ -270,11 +388,15 @@ const Report = () => {
                                         <label>
                                             Hazard Rating
                                         </label>
+<<<<<<< HEAD
                                         <select
                                             name="rating"
                                             onChange={handleChange}    
                                             required
                                         >
+=======
+                                        <select>
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                             <option>Select the hazard rating</option>
                                             <option>Low</option>
                                             <option>Medium</option>
@@ -292,9 +414,12 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+<<<<<<< HEAD
                                             name="other_info"
                                             onChange={handleChange}    
                                             required
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         />
                                     </div>
                                     
@@ -311,7 +436,11 @@ const Report = () => {
                                         </label>
                                         <input 
                                             type="file" 
+<<<<<<< HEAD
                                             className="risk-input-text"                            
+=======
+                                            className="risk-input-text"
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         />
                                     </div>
                                     

@@ -28,17 +28,18 @@ A few deterrent can discourage employees from reporting risk such;
  1. Pressure to get the job done in a short amount of time.
 2.  Lack of feedback from reported incidents.
 
-## The Solution 
+## Our Solution 
 Research has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
 
 So, we created StarCard to be a central platform for real-time visibility into various hazards.
 
-## Here is how it works:
-The first person to witness a hazard
-gets onto the web app, sign-ups,
-fills a web form to make prioritized  reports of  hazards as text, picture and video format.
-Then submits.
-The data submitted is displayed on a dashboard for first responders to evaluate and prioritize  hazard reports.
+### Here is how it works:
+- The individual to witness a hazard
+  - gets onto the web app, 
+  - signs up,
+  - fills a web form to make prioritized reports of hazards as text, picture and/or video format.
+  - then submits.
+- The data submitted is displayed on a dashboard for first responders to evaluate and prioritize hazard reports.
 
 ## The Architecture:
 

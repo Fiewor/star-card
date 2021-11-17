@@ -9,11 +9,10 @@ const Footer = () => {
                 <div className="social-container">
                     <p>Starcard</p>
                     <div className="social-links">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                        <i class="fas fa-envelope"></i>
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
                     </div>
                 </div>
                 <div className="secondary-container">

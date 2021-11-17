@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar';
 const Report = () => {
     // const [file, setFile] = useState("")
     const [width, setWidth] = useState(window.innerWidth)
-    const breakpoint = 700
+    const breakpoint = 768
     useEffect(() => {
         const handleWindowResize = () => setWidth(window.innerWidth)
         window.addEventListener("resize", handleWindowResize)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import '../components/Login.css';
 import { Link, useHistory } from 'react-router-dom';
@@ -36,6 +37,13 @@ const Login = () => {
         });
     }
 
+=======
+import React from 'react';
+import '../components/Login.css';
+import { Link } from 'react-router-dom';
+
+const Login = () => {
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
     return (
         <>
             <section className="login">
@@ -51,8 +59,11 @@ const Login = () => {
                                     <input 
                                         type="email"
                                         placeholder="Email"
+<<<<<<< HEAD
                                         name="email"
                                         onChange={handleChange}
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         required
                                     />
                                 </div>
@@ -61,8 +72,11 @@ const Login = () => {
                                     <input 
                                         type="password"
                                         placeholder="Password"
+<<<<<<< HEAD
                                         name="password"
                                         onChange={handleChange}
+=======
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         required
                                     />
                                     <p className="forgot-pass">
@@ -73,10 +87,14 @@ const Login = () => {
                                 </div>
 
                                 <div>
+<<<<<<< HEAD
                                     <button 
                                         className="login-btn"
                                         onClick={handleSubmit}
                                     >
+=======
+                                    <button className="login-btn">
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                                         Sign In
                                     </button>
                                 </div>

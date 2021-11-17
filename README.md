@@ -1,6 +1,10 @@
 ## Table of Contents
 - [Problem Statement](#the-problem)
+<<<<<<< HEAD
 - [Our solution](#the-solution)
+=======
+- [Our solution](#our-solution)
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 - [The Architecture](#the-architecture)
 - [Technologies](#technologies)
 - [Demo Video Link](#demo-video-link)
@@ -10,6 +14,7 @@
 - [Licenses](#licenses)
 
 
+<<<<<<< HEAD
 ## The Problem:
 
 As of early October 2021, NOAA National Centers for Environmental Information states that the United States has experienced 18 weather/climate disasters with losses exceeding $1 billion each. 
@@ -39,6 +44,38 @@ A  simple web application that;
 Software users can reports bugs via  text, screenshots, screencasts, silent and voiced screen recording of such bugs. -->
 
 2. Preserve climate by helping preserve more trees that could be used to produce papers and cards for reporting hazards in developing or underdeveloped regions.
+=======
+## Overview:
+Reporting workplace incidents and hazard is not about calling out (or blaming) certain people or environments.
+
+It's about fostering  safety and productivity and as such, employees and supervisors are both part of the solution as day-to-day heros when it comes to mitigating risk.
+
+This helps to gain a greater understanding of where risks are occurring and ensure  hazards does not grow into a more serious risk.
+
+As of early October 2021, research shows that  the United States has experienced 18 weather disasters with losses exceeding $1 billion each.
+
+Annually 12.2 million people, mostly in developing countries, die from noncommunicable diseases while still of active working age.
+
+Excessive Noise, and ergonomic hazards could cause accidents, litigations and depression.
+
+## What's the problem?
+A few deterrent can discourage employees from reporting risk such; 
+ 1. Pressure to get the job done in a short amount of time.
+2.  Lack of feedback from reported incidents.
+
+## Our Solution 
+Research has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
+
+So, we created StarCard to be a central platform for real-time visibility into various hazards.
+
+### Here is how it works:
+- The individual to witness a hazard
+  - gets onto the web app, 
+  - signs up,
+  - fills a web form to make prioritized reports of hazards as text, picture and/or video format.
+  - then submits.
+- The data submitted is displayed on a dashboard for first responders to evaluate and prioritize hazard reports.
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 
 ## The Architecture:
 

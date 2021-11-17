@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, {useState, useEffect} from 'react';
 import '../components/Dashboard.css';
 import Sidebar from '../components/Sidebar';
@@ -38,15 +39,40 @@ const Dashboard = () => {
     return (
         <section className="dashboard">
             < Sidebar organisationDetails={organisationDetails} />
+=======
+import React, { useState, useEffect } from 'react';
+import '../components/Dashboard.css';
+import Sidebar from '../components/Sidebar';
+import {Link} from 'react-router-dom';
+
+const Dashboard = () => {
+    const [width, setWidth] = useState(window.innerWidth)
+    const breakpoint = 768
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize)
+        return () => {
+        window.removeEventListener("resize", handleWindowResize)
+        }
+    }, [])
+
+    return (
+        <section className="dashboard">
+            {(width > breakpoint) && < Sidebar />}
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 
             <div className="main-page">
                 <div className="main-page-nav">
                     <div>
                         <h3>
+<<<<<<< HEAD
                             Welcome back, <span>
                                 {organisationDetails}
                             </span>
 
+=======
+                            Welcome back, Daniel
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                         </h3>
                         <p>
                             Enter your risk assessment report on the job you just conmpleted
@@ -54,6 +80,7 @@ const Dashboard = () => {
                     </div>
 
                     <div className="main-page-nav-profile">
+<<<<<<< HEAD
                         <Link to="/createmployee">
                             <p>Create an employee</p>
                         </Link>
@@ -70,6 +97,26 @@ const Dashboard = () => {
                                     <i className="fas fa-sign-out-alt"></i> 
                                     <span>Logout</span>
                                 </button>
+=======
+                        <a href="#">
+                            <i className="fas fa-search"></i>
+                            <i className="far fa-bell"></i>
+                        </a>
+
+                        <div style={{display: 'flex', paddingLeft: "10px" }}>
+                            <p style={{paddingRight: "10px"}}>
+                                Daniel Riverdale
+                            </p>
+                            <div>
+                                <p>
+                                    <a 
+                                        href="#"
+                                        className="logout"
+                                    >
+                                        <i className="fas fa-sign-out-alt"></i> Logout
+                                    </a>
+                                </p>
+>>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                             </div>
                         </div>
                     </div>

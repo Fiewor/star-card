@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../components/Dashboard.css';
 import Sidebar from '../components/Sidebar';
 import {Link} from 'react-router-dom';
 
 const Dashboard = () => {
+    const [width, setWidth] = useState(window.innerWidth)
+    const breakpoint = 768
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize)
+        return () => {
+        window.removeEventListener("resize", handleWindowResize)
+        }
+    }, [])
+
     return (
         <section className="dashboard">
-            < Sidebar />
+            {(width > breakpoint) && < Sidebar />}
 
             <div className="main-page">
                 <div className="main-page-nav">

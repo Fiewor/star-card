@@ -10,8 +10,7 @@
 }
 
 .dashboard-details {
-    padding: 1.5rem;
-    
+    padding: 1.5rem; 
 }
 
 .dashboard-data {
@@ -56,4 +55,13 @@
 .dashboard-filter {
     font-size: 14px;
     margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-details {
+        padding: .5rem; 
+    }
+    .dashboard-filter div{
+        justify-content: space-between;
+    }
 }

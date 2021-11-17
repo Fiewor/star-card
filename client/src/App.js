@@ -8,6 +8,8 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Report from './pages/Report';
 import Dashboard from './pages/Dashboard';
 import DashboardResult from './pages/DashboardResult';
+import CreateEmployee from './pages/CreateEmployee';
+import EmployeeLogin from './pages/EmployeeLogin';
 
 function App() {
   return (
@@ -42,6 +44,14 @@ function App() {
 
           <Route path="/result">
             < DashboardResult />
+          </Route>
+
+          <Route path="/createmployee">
+            < CreateEmployee />
+          </Route>
+
+          <Route path="/employeelogin">
+            < EmployeeLogin />
           </Route>
         </Switch>
       </Router>

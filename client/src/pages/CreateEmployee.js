@@ -1,57 +1,70 @@
 import React, { useState } from 'react';
-import '../components/Login.css';
+import '../components/CreateEmployee.css';
 import { Link, useHistory } from 'react-router-dom';
 import axios from 'axios';
 
-const Login = () => { 
+const CreateEmployee = () => { 
     const history = useHistory();
-
+   
+    
     const [formData, setFormData] = useState({
-        email: "",
-        password: ""
-    })
+        employee_name : '',
+        employee_email : '',
+        password : ''
+    });
 
     const handleChange = (e) => {
         setFormData({...formData, [e.target.name]: e.target.value})
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         const config = {
             headers: { 
                 'Accept': 'application/json', 
+                'Authorization': JSON.parse(localStorage.getItem('token'))
             }
         }
 
-        axios.post("https://star-card.herokuapp.com/api/login", formData, config)
+        await axios.post("https://star-card.herokuapp.com/api/create_employee", formData, config)
         .then(function (response) {
             console.log("success", formData)
-            console.log(response);
-            localStorage.setItem('token', JSON.stringify(response.data.access_token));
-            history.push("/dashboard")
+            console.log(response)
+            history.push("/report")
         })
         .catch(function (error) {
             console.log(error);
         });
     }
 
+
     return (
         <>
-            <section className="login">
-                <div className="login-container">
-                    <div className="login-form">
-                        <div className="login-form-div">
-                            <h1>Welcome</h1>
+            <section className="create">
+                <div className="create-container">
+                    <div className="create-form">
+                        <div className="create-form-div">
+                            <h1>Create an Employee</h1>
                             <form 
                                 action=""
                                 className=""
                             >
                                 <div>
                                     <input 
+                                        type="text"
+                                        placeholder="Employee Name"
+                                        name="employee_name"
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+
+                                <div>
+                                    <input 
                                         type="email"
-                                        placeholder="Email"
-                                        name="email"
+                                        placeholder="Employee Email"
+                                        name="employee_email"
                                         onChange={handleChange}
                                         required
                                     />
@@ -65,38 +78,28 @@ const Login = () => {
                                         onChange={handleChange}
                                         required
                                     />
-                                    <p className="forgot-pass">
-                                        <a href="#">
-                                            Forgot password ?
-                                        </a>
-                                    </p>
                                 </div>
 
                                 <div>
                                     <button 
-                                        className="login-btn"
+                                        className="create-btn"
                                         onClick={handleSubmit}
                                     >
-                                        Sign In
+                                        Create Employee
                                     </button>
                                 </div>
 
-                                <p className="sign-up-link">
-                                    You don't have an account? <Link to="/signup">
-                                        Sign up here . . .
-                                    </Link>  
-                                </p>
                             </form>
                         </div>
                     </div>
 
-                    <div className="login-bg">
+                    <div className="create-bg">
                         <div>
                             <h3>
                                 Star Card
                             </h3>
                             <p>
-                                Secure your risk assesment data entry
+                                Create an employee to add to a report 
                             </p>
                         </div>
                     </div>
@@ -106,4 +109,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default CreateEmployee

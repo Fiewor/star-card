@@ -2,45 +2,79 @@ import React, {useState, useEffect} from 'react';
 import '../components/Report.css';
 import Sidebar from '../components/Sidebar';
 import axios from 'axios';
+import {useHistory} from 'react-router-dom';
 
 const Report = () => {
-    // const [file, setFile] = useState("")
-    const [Id, setId] = useState("");
-    const [date, setDate] = useState("");
-    const [location, setLocation] = useState("");
+    const [employee, setEmployee] = useState("");
+    const history = useHistory();
+
+
+
+    
 
     useEffect(() => {
+        const config = {
+            headers: { 
+                'Accept': 'application/json', 
+                'Authorization': JSON.parse(localStorage.getItem('token'))
+            }
+        }
+        
+        axios.get('https://star-card.herokuapp.com/api/organization_details', config)
+        .then(function (response) {
+            console.log("success");
+            console.log(response);
+            console.log(setEmployee(response.data.data.organization));
+            
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+    }, [])
 
-    })
+    const handleLogOut = () => {
+        // localStorage.clear();
+        history.push("/employeelogin")
+    }
 
-    // axios({
-    //     method: 'post',
-    //     url: 'https://star-card.herokuapp.com/api/register',
-    //     data: {
-    //       firstName: 'shedrack',
-    //       lastName: 'akintayo',
-    //     }
-    // }).then(response => {
-    //     console.log('Date created: ', response);
-    // }).catch((error) => {
-    //     console.log("error: ", error);
-    // })
+    const [formData, setFormData] = useState({
+        location: '',
+        hazard_description: '',
+        risked_resource: '',
+        probability: '',
+        impact: '',
+        existing_control: '',
+        existing_prevention: '',
+        rating: '',
+        other_info: '',
+        // media: ''
+    }); 
 
-    axios.post('https://star-card.herokuapp.com/api/create_card', {
-        Id: Id,
-        date: date,
-        location: location
-    })
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value})
+    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const config = {
+            headers: { 
+                'Accept': 'application/json', 
+                'Authorization': JSON.parse(localStorage.getItem('token'))
+            }
+        }
+
+        axios.post("https://star-card.herokuapp.com/api/create_card", formData, config)
+        .then(function (response) {
+            
+            console.log("success", formData)
+            console.log(response);
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
+
     const [width, setWidth] = useState(window.innerWidth)
     const breakpoint = 700
     useEffect(() => {
@@ -59,7 +93,9 @@ const Report = () => {
                 <div className="main-page-nav">
                     <div>
                         <h3>
-                            Welcome back, Daniel
+                            Welcome back, <span>
+                                {employee}
+                            </span>
                         </h3>
                         <p>
                             Enter your risk assessment report on the job you just conmpleted
@@ -74,17 +110,18 @@ const Report = () => {
 
                         <div className="profile-user">
                             <p>
-                                Daniel Riverdale
+                                {employee}
                             </p>
                             <div>
-                                <p>
-                                    <a 
-                                        href="#"
-                                        className="logout"
-                                    >
-                                        <i className="fas fa-sign-out-alt"></i> Logout
-                                    </a>
-                                </p>
+                                <button
+                                    onClick={handleLogOut}
+                                    className="logout"
+                                >                                    
+                                    <i className="fas fa-sign-out-alt"></i> 
+                                    <span>
+                                        Logout    
+                                    </span>                                   
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -106,8 +143,7 @@ const Report = () => {
                                         </label>
                                         <input 
                                             type="text" 
-                                            className="risk-input-text"
-                                            onChange={(e) => setId(e.target.value)}
+                                            className="risk-input-text"                                            
                                             required
                                         />
                                     </div>
@@ -118,30 +154,33 @@ const Report = () => {
                                         </label>
                                         <input 
                                             type="date"
-                                            value="2021-01-30"
-                                            className="risk-input-text"
-                                            onChange={(e) => setDate(e.target.value)}
+                                            // value="2021-01-30"
+                                            className="risk-input-text"                                                                                    
                                             required
                                         />
                                     </div>
 
                                     <div>
                                         <label>
-                                            Time
+                                            location
                                         </label>
                                         <input 
-                                            type="time"
+                                            type="text"
+                                            name="location"
+                                            onChange={handleChange}
+                                            required    
                                         />
                                     </div>
 
                                     <div>
                                         <label>
-                                            Location
+                                            Hazard Description
                                         </label>
                                         <input 
                                             type="text" 
-                                            className="risk-input-text"
-                                            onChange={(e) => setLocation(e.target.value)}
+                                            className="risk-input-text"  
+                                            name="hazard_description"
+                                            onChange={handleChange}                                              
                                             required
                                         />
                                     </div>
@@ -150,21 +189,24 @@ const Report = () => {
                                 <div className="risk-input-group-2">
                                     <div>
                                         <label>
-                                            Hazard Description
-                                        </label>
-                                        <input 
-                                            type="text" 
-                                            className="risk-input-text"
-                                        />
-                                    </div>
-
-                                    <div>
-                                        <label>
                                             Resources at Risk
                                         </label>
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+                                            name="risked_resource"
+                                            onChange={handleChange} 
+                                            required   
+                                        />
+                                    </div>
+
+                                    <div>
+                                        <label>
+                                            Time
+                                        </label>
+                                        <input 
+                                            type="time" 
+                                            className="risk-input-text"                                        
                                         />
                                     </div>
 
@@ -172,7 +214,11 @@ const Report = () => {
                                         <label>
                                             Risk Probability 
                                         </label>
-                                        <select>
+                                        <select
+                                            name="probability"
+                                            onChange={handleChange}    
+                                            required
+                                        >
                                             <option>Select a risk probability</option>
                                             <option>Low</option>
                                             <option>Medium</option>
@@ -186,7 +232,11 @@ const Report = () => {
                                         <label>
                                             Risk Impact
                                         </label>
-                                        <select>
+                                        <select
+                                            name="impact"
+                                            onChange={handleChange}    
+                                            required
+                                        >
                                             <option>Select the level of the risk impact</option>
                                             <option>Low</option>
                                             <option>Medium</option>
@@ -201,6 +251,9 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+                                            name="existing_control"
+                                            onChange={handleChange}    
+                                            required
                                         />
                                     </div>
                                 </div>
@@ -213,6 +266,9 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+                                            name="existing_prevention"
+                                            onChange={handleChange}    
+                                            required
                                         />
                                     </div>
 
@@ -220,7 +276,11 @@ const Report = () => {
                                         <label>
                                             Hazard Rating
                                         </label>
-                                        <select>
+                                        <select
+                                            name="rating"
+                                            onChange={handleChange}    
+                                            required
+                                        >
                                             <option>Select the hazard rating</option>
                                             <option>Low</option>
                                             <option>Medium</option>
@@ -238,6 +298,9 @@ const Report = () => {
                                         <input 
                                             type="text" 
                                             className="risk-input-text"
+                                            name="other_info"
+                                            onChange={handleChange}    
+                                            required
                                         />
                                     </div>
                                     
@@ -255,6 +318,9 @@ const Report = () => {
                                         <input 
                                             type="file" 
                                             className="risk-input-text"
+                                            // name="media"
+                                            // onChange={handleChange}    
+                                            required
                                         />
                                     </div>
                                     

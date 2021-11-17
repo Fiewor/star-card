@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import '../components/Signup.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useHistory } from 'react-router';
 
 const Signup = () => {
+    const history = useHistory();
 
     const [formData, setFormData] = useState({
         name: '',
@@ -20,7 +22,6 @@ const Signup = () => {
     }
 
     const handleSubmit = (e) => {
-        console.log(formData);
         e.preventDefault();
 
         const config = {
@@ -34,6 +35,7 @@ const Signup = () => {
             
             console.log("success", formData)
             console.log(response)
+            history.push("/login")
         })
         .catch(function (error) {
             console.log(error);

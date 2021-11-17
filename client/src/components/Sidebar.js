@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({organisationDetails}) => {
     return (
         <>
             <div className="sidebar">
@@ -11,7 +11,7 @@ const Sidebar = () => {
                             Star Card
                         </h3>
                         <p>
-                            PH Free Service
+                            {organisationDetails}
                         </p>
                     </div>
                 </div>  

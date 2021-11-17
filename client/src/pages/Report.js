@@ -8,10 +8,6 @@ const Report = () => {
     const [employee, setEmployee] = useState("");
     const history = useHistory();
 
-
-
-    
-
     useEffect(() => {
         const config = {
             headers: { 
@@ -25,7 +21,6 @@ const Report = () => {
             console.log("success");
             console.log(response);
             console.log(setEmployee(response.data.data.organization));
-            
         })
         .catch(function (error) {
             console.log(error);
@@ -46,8 +41,7 @@ const Report = () => {
         existing_control: '',
         existing_prevention: '',
         rating: '',
-        other_info: '',
-        // media: ''
+        other_info: ''
     }); 
 
     const handleChange = (e) => {
@@ -317,10 +311,7 @@ const Report = () => {
                                         </label>
                                         <input 
                                             type="file" 
-                                            className="risk-input-text"
-                                            // name="media"
-                                            // onChange={handleChange}    
-                                            required
+                                            className="risk-input-text"                            
                                         />
                                     </div>
                                     

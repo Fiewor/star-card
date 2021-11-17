@@ -1,6 +1,6 @@
 ## Table of Contents
 - [Problem Statement](#the-problem)
-- [Our solution](#the-solution)
+- [Our solution](#our-solution)
 - [The Architecture](#the-architecture)
 - [Technologies](#technologies)
 - [Demo Video Link](#demo-video-link)
@@ -11,9 +11,9 @@
 
 
 ## Overview:
-Reporting workplace incidents  and hazard is not about calling out (or blaming) certain people or environments.
+Reporting workplace incidents and hazard is not about calling out (or blaming) certain people or environments.
 
-  It's about fostering  safety and productivity and as such, employees and supervisors are both part of the solution as day-to-day heros when it comes to mitigating risk.
+It's about fostering  safety and productivity and as such, employees and supervisors are both part of the solution as day-to-day heros when it comes to mitigating risk.
 
 This helps to gain a greater understanding of where risks are occurring and ensure  hazards does not grow into a more serious risk.
 
@@ -21,7 +21,7 @@ As of early October 2021, research shows that  the United States has experienced
 
 Annually 12.2 million people, mostly in developing countries, die from noncommunicable diseases while still of active working age.
 
-Excessive Noise, Software bugs and ergonomic hazards could cause accidents, litigations and depression.
+Excessive Noise, and ergonomic hazards could cause accidents, litigations and depression.
 
 ## What's the problem?
 A few deterrent can discourage employees from reporting risk such; 

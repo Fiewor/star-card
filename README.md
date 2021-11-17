@@ -33,12 +33,10 @@ Research has demonstrated that workplace health initiatives can help reduce sick
 
 So, we created StarCard to be a central platform for real-time visibility into various hazards.
 
-## 
-Here is how it works:
+## Here is how it works:
 The first person to witness a hazard
-gets onto the web app.
-The person sign-ups,
- Then person fill a web form to make prioritized  reports of  hazards as text, picture and video format.
+gets onto the web app, sign-ups,
+fills a web form to make prioritized  reports of  hazards as text, picture and video format.
 Then submits.
 The data submitted is displayed on a dashboard for first responders to evaluate and prioritize  hazard reports.
 

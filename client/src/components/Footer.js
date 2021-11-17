@@ -15,13 +15,13 @@ const Footer = () => {
                         <i class="fab fa-twitter"></i>
                     </div>
                 </div>
-                <div className="secondary-container">
+                <div className="footer-secondary-container">
                     <p>Sitemap</p>
                     <Link to="">Pricing</Link>
                     <Link to="/signup">Sign in</Link>
                     <Link>Create Workspace</Link>
                 </div>
-                <div className="secondary-container">
+                <div className="footer-secondary-container">
                     <p>Discover</p>
                     <Link to="">Culture</Link>
                     <Link to="">Cuisine</Link>

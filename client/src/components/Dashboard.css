@@ -10,12 +10,7 @@
 }
 
 .dashboard-details {
-<<<<<<< HEAD
-    padding: 1.5rem;
-    
-=======
     padding: 1.5rem; 
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 }
 
 .dashboard-data {
@@ -60,8 +55,6 @@
 .dashboard-filter {
     font-size: 14px;
     margin: 1rem 0;
-<<<<<<< HEAD
-=======
 }
 
 @media screen and (max-width: 768px) {
@@ -71,5 +64,4 @@
     .dashboard-filter div{
         justify-content: space-between;
     }
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 }

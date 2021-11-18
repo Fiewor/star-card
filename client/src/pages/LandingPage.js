@@ -10,15 +10,9 @@ const LandingPage = () => {
             <div className="main-container">
                 <div className="hero-container">
                     <h1>Be a Hero to your Heroes</h1>
-<<<<<<< HEAD
-                    <h4>Create a workspace that enhances your teams safety and 
-                        productivity with our risk analysis reporting tool
-                    </h4>
-=======
                     <h3>Create a workspace that enhances your teams safety and 
                         productivity with our risk analysis reporting tool
                     </h3>
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                     <div className="button-container">
                         <button>Create Workspace</button>
                         <button>View Pricing</button>

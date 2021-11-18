@@ -1,28 +1,11 @@
 footer {
     background: #000;
     color: #fff;
-<<<<<<< HEAD
-=======
     padding-bottom: 2rem;
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 }
 
 .footer-container{
     margin: 0 2rem;
-<<<<<<< HEAD
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.social-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.social-container p {
-    color: #fff;
-=======
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
@@ -34,39 +17,11 @@ footer {
     display: block;
     color: #fff;
     font-size: 1.5rem;
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 }
 
 .social-links {
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-}
-
-.social-links i {
-    background: #3838e0;
-    color: #fff;
-    border-radius: 50%;
-}
-
-.secondary-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.secondary-container a{
-    text-decoration: none;
-    color: #fff;
-    align-content: center;
-    font-size: 0.7rem;
-}
-
-hr {
-    border-bottom: 3px blue solid;
-    padding: 2rem;
-    width: 90vw;
-=======
     flex-wrap: wrap;
 }
 
@@ -122,5 +77,4 @@ a:hover{
     .footer-container{
         margin: 0 1rem;
     }
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 }

@@ -12,7 +12,7 @@
 
 ## Overview
 During the pandemic the immense contribution and importance of our everyday heroes was undoubtedly spotlighted.
-The most important form of reward and help that can be offered to these unsung heroes is the provision of a safe and healthy environment for them to carry out their amzing duties in.
+The most important form of reward and help that can be offered to these unsung heroes is the provision of a safe and healthy environment for them to carry out their amazing duties.
 This can be fostered through collaboration thereby enhancing workplace safety and productivity for our everyday heros.
 
 One way of doing this is by giving the heroes a platform to report their workplace risks and hazards. Such a  solution can easily be accessed through the effectively display of the hazard and risks in a descriptive and visual manner making it easier for the authorities responsible within the workplace and in the larger society to quickly take necessary actions to mitigate such hazards.

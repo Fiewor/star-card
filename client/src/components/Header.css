@@ -15,6 +15,15 @@ header{
     font-size: 2rem;
 }
 
+header a{
+    text-decoration: none;
+    color: #000;
+}
+
+header a:hover{
+    color: #8f8f8f;
+}
+
 .links{
     display: flex;
     justify-content: space-between;
@@ -22,34 +31,16 @@ header{
 }
 
 .links a{
-    text-decoration: none;
-    color: #000;
     padding: 0 0.5rem;
 }
 
-.links button{
-    background: #2E8FFF;
-    box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
-    border: none;
-    color: #fff;
-    padding: 0.8rem 1rem;
-    border-radius: 10px;
-    margin-right: 1em;
-    font-size: 1rem;
-}
-
-.links button:hover{
-    cursor: pointer;
-    background: #1875e0;
-}
-
-a:hover{
-    color: #8f8f8f;
-}
 
 @media screen and (max-width: 768px) {
     .header-container{
         background: linear-gradient(245deg, #97c7ff52 4%, #caffe500 25%, #cad0ff52 62.41%, #bcdbffc2 95%);
+    }
+    header{
+        margin: 0 0.5rem;
     }
     .logo{
         font-size: 1.5rem;

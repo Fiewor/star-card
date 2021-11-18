@@ -2,15 +2,8 @@ import React, { useEffect, useState } from 'react';
 import '../components/Signup.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-<<<<<<< HEAD
-import { useHistory } from 'react-router';
 
 const Signup = () => {
-    const history = useHistory();
-=======
-
-const Signup = () => {
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 
     const [formData, setFormData] = useState({
         name: '',
@@ -27,10 +20,7 @@ const Signup = () => {
     }
 
     const handleSubmit = (e) => {
-<<<<<<< HEAD
-=======
         console.log(formData);
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
         e.preventDefault();
 
         const config = {
@@ -44,10 +34,6 @@ const Signup = () => {
             
             console.log("success", formData)
             console.log(response)
-<<<<<<< HEAD
-            history.push("/login")
-=======
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
         })
         .catch(function (error) {
             console.log(error);

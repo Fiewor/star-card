@@ -1,45 +1,3 @@
-<<<<<<< HEAD
-import React, {useState, useEffect} from 'react';
-import '../components/Dashboard.css';
-import Sidebar from '../components/Sidebar';
-import {Link, useHistory} from 'react-router-dom';
-import axios from 'axios';
-
-const Dashboard = () => {
-    const [organisationDetails, setOrganisationDetails] = useState("");
-    const history = useHistory();
-    
-    const config = {
-        headers: { 
-            'Accept': 'application/json', 
-            'Authorization': JSON.parse(localStorage.getItem('token'))
-        }
-    }
-
-    useEffect(() => {
-        axios.get('https://star-card.herokuapp.com/api/organization_details', config)
-        .then(function (response) {
-            console.log("success");
-            console.log(response);
-            console.log(setOrganisationDetails(response.data.data.organization));
-            
-        })
-        .catch(function (error) {
-            console.log(error);
-        });
-    }, [])
-
-    const handleLogout = (e) => {
-
-        localStorage.clear();
-        history.push("/login")
-
-    }
-
-    return (
-        <section className="dashboard">
-            < Sidebar organisationDetails={organisationDetails} />
-=======
 import React, { useState, useEffect } from 'react';
 import '../components/Dashboard.css';
 import Sidebar from '../components/Sidebar';
@@ -59,20 +17,12 @@ const Dashboard = () => {
     return (
         <section className="dashboard">
             {(width > breakpoint) && < Sidebar />}
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 
             <div className="main-page">
                 <div className="main-page-nav">
                     <div>
                         <h3>
-<<<<<<< HEAD
-                            Welcome back, <span>
-                                {organisationDetails}
-                            </span>
-
-=======
                             Welcome back, Daniel
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                         </h3>
                         <p>
                             Enter your risk assessment report on the job you just conmpleted
@@ -80,24 +30,6 @@ const Dashboard = () => {
                     </div>
 
                     <div className="main-page-nav-profile">
-<<<<<<< HEAD
-                        <Link to="/createmployee">
-                            <p>Create an employee</p>
-                        </Link>
-
-                        <div style={{display: 'flex', paddingLeft: "10px" }}>
-                            <p style={{paddingRight: "10px"}}>
-                                {organisationDetails}
-                            </p>
-                            <div>
-                                <button
-                                    className="logout"
-                                    onClick={handleLogout}
-                                >                                    
-                                    <i className="fas fa-sign-out-alt"></i> 
-                                    <span>Logout</span>
-                                </button>
-=======
                         <a href="#">
                             <i className="fas fa-search"></i>
                             <i className="far fa-bell"></i>
@@ -116,7 +48,6 @@ const Dashboard = () => {
                                         <i className="fas fa-sign-out-alt"></i> Logout
                                     </a>
                                 </p>
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
                             </div>
                         </div>
                     </div>

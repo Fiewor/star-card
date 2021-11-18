@@ -65,10 +65,16 @@
     border: 1px solid #000;
     border-radius: 5px;
     background: #fff;
-    /* padding: 0.2rem 1rem; */
+    padding: 0.5rem 0;
     margin: 0.4rem;
     width: 10vw;
     max-height: 3vw;
+    color: #000;
+}
+.industry-type:hover{
+    cursor: pointer;
+    background: gray;
+    color: #fff;
 }
 
 .forgot-pass {
@@ -98,6 +104,9 @@
     }
     .sign-up-link{
         font-size: 0.7rem;
+    }
+    .industry-container{
+        justify-content: space-around;
     }
     .industry-type{
         border: 1px solid #000;

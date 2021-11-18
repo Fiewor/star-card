@@ -54,14 +54,14 @@ const Signup = () => {
                         <div className="signup-form-div">
                             <h3>Select Industry</h3>
                             <div className="industry-container">
-                                <div className="industry-type">Health</div>
-                                <div className="industry-type">Education</div>
-                                <div className="industry-type">First Response</div>
-                                <div className="industry-type">Military</div>
-                                <div className="industry-type">Construction</div>
-                                <div className="industry-type">Policing</div>
-                                <div className="industry-type">Chain Store</div>
-                                <div className="industry-type">IT</div>
+                                <button className="industry-type">Health</button>
+                                <button className="industry-type">Education</button>
+                                <button className="industry-type">First Response</button>
+                                <button className="industry-type">Military</button>
+                                <button className="industry-type">Construction</button>
+                                <button className="industry-type">Policing</button>
+                                <button className="industry-type">Chain Store</button>
+                                <button className="industry-type">IT</button>
                             </div>
                             <h3>Work Information</h3>
                             <form 

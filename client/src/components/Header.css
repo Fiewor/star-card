@@ -1,9 +1,6 @@
 .header-container{
-<<<<<<< HEAD
     background: #cefcff;
-=======
-    background: linear-gradient(245deg, #97c7ff52 5%, #caffe500 30%, #cad0ff52 62%, #bcdbffc2 99%);
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
+    /* background: linear-gradient(245deg, #97c7ff52 5%, #caffe500 30%, #cad0ff52 62%, #bcdbffc2 99%); */
 }
 
 header{
@@ -32,51 +29,45 @@ header{
 }
 
 .links button{
-<<<<<<< HEAD
     background: aqua;
     border: none;
     color: #fff;
     padding: 0.5rem 0.7rem;
-=======
     background: #2E8FFF;
     box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
     border: none;
     color: #fff;
     padding: 0.8rem 1rem;
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
     border-radius: 10px;
     margin-right: 1em;
     font-size: 1rem;
 }
 
-<<<<<<< HEAD
 button:hover{
     cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-=======
-.links button:hover{
-    cursor: pointer;
-    background: #1875e0;
-}
+    .links button:hover{
+        cursor: pointer;
+        background: #1875e0;
+    }
 
-a:hover{
-    color: #8f8f8f;
+    a:hover{
+        color: #8f8f8f;
+    }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
     .header-container{
         background: linear-gradient(245deg, #97c7ff52 4%, #caffe500 25%, #cad0ff52 62.41%, #bcdbffc2 95%);
     }
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
     .logo{
         font-size: 1.5rem;
     }
     .links:first-of-type{
         display: none;
     }
-    .links button{
+    .links button {
         font-size: 0.8rem;
         margin-right: 0;
     }

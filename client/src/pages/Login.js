@@ -1,23 +1,28 @@
 import React from 'react';
 import '../components/Login.css';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Login = () => {
     return (
         <>
+            <Header/>
             <section className="login">
-                <div className="login-container">
+                    <h2>Sign In</h2>
+                    <div className="login-container">
                     <div className="login-form">
                         <div className="login-form-div">
-                            <h1>Welcome</h1>
                             <form 
                                 action=""
                                 className=""
                             >
+
                                 <div>
                                     <input 
                                         type="email"
                                         placeholder="Email"
+                                        name="email"
                                         required
                                     />
                                 </div>
@@ -26,19 +31,17 @@ const Login = () => {
                                     <input 
                                         type="password"
                                         placeholder="Password"
+                                        name="password"
                                         required
                                     />
+                                </div>
+
+                                <div>
                                     <p className="forgot-pass">
                                         <a href="#">
                                             Forgot password ?
                                         </a>
                                     </p>
-                                </div>
-
-                                <div>
-                                    <button className="login-btn">
-                                        Sign In
-                                    </button>
                                 </div>
 
                                 <p className="sign-up-link">
@@ -49,19 +52,9 @@ const Login = () => {
                             </form>
                         </div>
                     </div>
-
-                    <div className="login-bg">
-                        <div>
-                            <h3>
-                                Star Card
-                            </h3>
-                            <p>
-                                Secure your risk assesment data entry
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 }

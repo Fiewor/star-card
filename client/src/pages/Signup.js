@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import '../components/Signup.css';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import WorkspaceButton from '../components/WorkspaceButton';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -43,11 +46,24 @@ const Signup = () => {
 
     return (
         <>
+            <Header/>
             <section className="signup">
+                <h1>Create Workspace</h1>
                 <div className="signup-container">
                     <div className="signup-form">
                         <div className="signup-form-div">
-                            <h1>Sign Up</h1>
+                            <h3>Select Industry</h3>
+                            <div className="industry-container">
+                                <div className="industry-type">Health</div>
+                                <div className="industry-type">Education</div>
+                                <div className="industry-type">First Response</div>
+                                <div className="industry-type">Military</div>
+                                <div className="industry-type">Construction</div>
+                                <div className="industry-type">Policing</div>
+                                <div className="industry-type">Chain Store</div>
+                                <div className="industry-type">IT</div>
+                            </div>
+                            <h3>Work Information</h3>
                             <form 
                                 action=""
                                 className=""
@@ -55,7 +71,7 @@ const Signup = () => {
                                 <div>
                                     <input 
                                         type="text"
-                                        placeholder="Name"
+                                        placeholder="Business Name"
                                         name="name"
                                         onChange={handleChange}
                                         required
@@ -130,12 +146,7 @@ const Signup = () => {
                                 </div>
 
                                 <div>
-                                    <button 
-                                        className="signup-btn"
-                                        onClick={handleSubmit}
-                                    >
-                                        Sign up
-                                    </button>
+                                    <WorkspaceButton/>
                                 </div>
 
                                 <p className="sign-up-link">
@@ -146,19 +157,9 @@ const Signup = () => {
                             </form>
                         </div>
                     </div>
-
-                    <div className="signup-bg">
-                        <div>
-                            <h3>
-                                Star Card
-                            </h3>
-                            <p>
-                                Keep heros safe and more productive by giving them a web-based platform to report hazards and get real-time prioritized response
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </section>
+            <Footer/>
         </>
     )
 }

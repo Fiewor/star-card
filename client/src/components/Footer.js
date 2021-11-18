@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="social-container">
-                    <p>Starcard</p>
+                    <Link>Starcard</Link>
                     <div className="social-links">
                         <i class="fas fa-envelope"></i>
                         <i class="fab fa-facebook-f"></i>
@@ -17,16 +17,16 @@ const Footer = () => {
                 </div>
                 <div className="footer-secondary-container">
                     <p>Sitemap</p>
-                    <Link to="">Pricing</Link>
+                    <Link to="#">Pricing</Link>
                     <Link to="/signup">Sign in</Link>
                     <Link>Create Workspace</Link>
                 </div>
                 <div className="footer-secondary-container">
                     <p>Discover</p>
-                    <Link to="">Culture</Link>
-                    <Link to="">Cuisine</Link>
-                    <Link to="">Community</Link>
-                    <Link to="">Companionship</Link>
+                    <Link to="#">Culture</Link>
+                    <Link to="#">Cuisine</Link>
+                    <Link to="#">Community</Link>
+                    <Link to="#">Companionship</Link>
                 </div>
             </div>
             <div/>

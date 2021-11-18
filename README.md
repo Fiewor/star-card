@@ -22,14 +22,14 @@ One way of doing this is by giving the heroes a platform to report their workpla
 According to the [International Labour Organisation](https://www.ilo.org/moscow/areas-of-work/occupational-safety-and-health/WCMS_249278/lang--en/index.htm),
 > some 2.3 million women and men around the world succumb to work-related accidents or diseases every year; this corresponds to over 6000 deaths every single day. Worldwide, there are around 340 million occupational accidents and 160 million victims of work-related illnesses annually.
 
-Currently, in some companies in Africa, the reporting of these hazards is done physically using 'safety cards'. This current approach has a few limitations/deterrents which can discourage employees from reporting risk such as:
+Currently, in some companies in Africa, hazards are usually reported physically using 'safety cards'. This current approach has a few limitations/deterrents which can discourage employees from reporting risk such as:
 - Pressure to get the job done in a short amount of time leaves, in most scenarios, employees no time to even go through the strenuous physical process of collecting cards, filling them with pen, going back to the office of the supervisor to submit, waiting for the processing and so on.
-- Lack of feedback from reported incidents - it has been [noted](https://safetydifferently.com/stop-start-cards/) that these cards are often difficult to sort, dispensible and often unattended to.
+- Lack of feedback from reported incidents - it has been [noted](https://safetydifferently.com/stop-start-cards/) that these cards are often difficult to sort and are often unattended to.
 
 ## Our Solution 
 [Research](https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health) has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
 
-So, we created Star Card to be an accessible web platform for real-time reporting and visibility into various workplace risks and hazards.
+So, we created Star Card to be an easily accessible web platform for real-time reporting and visibility into various workplace risks and hazards.
 
 The [importance](https://www.uniprint.com.au/blogs/news/why-it-s-important-to-report-hazards-in-the-workplace#:~:text=Why%20Is%20Hazard%20Reporting%20Important,creating%20a%20safe%20working%20environment.&text=Most%20importantly%2C%20it%20ensures%20that,quality%20data%20to%20be%20collected) of reporting hazards cannot be over-emphasized so we aim to make the process easier and more efficient.
 ### Here is how it works:

@@ -182,7 +182,7 @@ const Dashboard = ({ history }) => {
                       <p>
                         <button className="resolved-btn">{probability}</button>
                       </p>
-                      <p>....</p>
+                      <p>...</p>
                     </div>
                   );
                 }

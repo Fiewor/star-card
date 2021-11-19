@@ -7,7 +7,9 @@ import "../components/Signup.css";
 import { Link } from "react-router-dom";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import WorkspaceButton from "../components/WorkspaceButton"
 //name, email, phone, organization, industry, password, password_confirmation
 
 const Signup = ({ history }) => {
@@ -54,6 +56,7 @@ const Signup = ({ history }) => {
   
   return (
     <>
+      <Header/>
       <section className="signup">
         <div className="signup-container">
           <div className="signup-form">
@@ -163,18 +166,9 @@ const Signup = ({ history }) => {
             </div>
           </div>
 
-          <div className="signup-bg">
-            <div>
-              <h3>Star Card</h3>
-              <p>
-                Keep heros safe and more productive by giving them a web-based
-                platform to report hazards and get real-time prioritized
-                response
-              </p>
-            </div>
-          </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

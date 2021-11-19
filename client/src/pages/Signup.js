@@ -29,7 +29,7 @@ const Signup = ({ history }) => {
 
   useEffect(() => {
     if (organizationInfo) {
-      window.location = "/dashboard";
+      window.location = "/login";
     }
   }, [history, organizationInfo]);
 
@@ -51,6 +51,7 @@ const Signup = ({ history }) => {
       );
     }
   };
+  
   return (
     <>
       <section className="signup">

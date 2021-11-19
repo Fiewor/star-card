@@ -77,6 +77,7 @@ const Dashboard = ({ history }) => {
   }, []);
 
   console.log(organizationInfo);
+  
   return (
     <section className="dashboard">
       {width > breakpoint && <Sidebar />}

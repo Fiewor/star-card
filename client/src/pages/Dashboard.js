@@ -28,7 +28,7 @@ const Dashboard = ({ history }) => {
   }, []);
 
   // useEffect(() => {
-  //   if (!organizationInfo) {
+  //   if (!organizationInfo) { 
   //     history.push('/login');
   //   } else {
   //     // console.log(OrganizationInfo);
@@ -80,7 +80,7 @@ const Dashboard = ({ history }) => {
   
   return (
     <section className="dashboard">
-      {width > breakpoint && <Sidebar />}
+      <Sidebar />
 
       <div className="main-page">
         <div className="main-page-nav">
@@ -117,7 +117,10 @@ const Dashboard = ({ history }) => {
         <div className="dashboard-details">
           <div className="dashboard-filter">
             <div>
-              <p style={{ paddingRight: '10px' }}>
+              <p
+                className="filter" 
+                style={{ paddingRight: '10px' }}
+              >
                 <i className="fab fa fa-facebook"></i> Filter
               </p>
               <div

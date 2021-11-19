@@ -13,15 +13,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
     height: 100vh;
-=======
-    padding: 3rem 0;
->>>>>>> 8da78fd6e715db994a9a7b54b4117976016f012a
 }
 
 .signup-form {
-    max-width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;

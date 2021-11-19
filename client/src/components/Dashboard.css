@@ -57,11 +57,31 @@
     margin: 1rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .dashboard-details {
         padding: .5rem; 
     }
     .dashboard-filter div{
         justify-content: space-between;
+    }
+
+    .db-grid {
+        display: block;        
+    }
+
+    .db-grid p {
+        padding-bottom: 0.9rem;
+    }
+
+    .dashboard-header-details {        
+        display: block;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .dashboard {
+        display: block;
     }
 }

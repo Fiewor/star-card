@@ -86,7 +86,11 @@
     padding: 1em 0;
 }
 
-@media (max-width: 768px) {
+.create-btn:hover {
+    background: #334;
+}
+
+@media only screen and  (max-width: 768px) {
     .create-bg {
         display: none;
     }
@@ -114,5 +118,13 @@
     .forgot-pass{
         text-align: start;
         font-size: 11px;
+    }
+
+    .create-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding: 2rem;
     }
 }

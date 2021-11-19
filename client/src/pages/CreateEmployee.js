@@ -26,7 +26,7 @@ const CreateEmployee = () => {
 
   useEffect(() => {
     if (!organizationInfo) {
-      history.push("/login");
+      history.push("/employee-login");
     } else {
       // console.log(OrganizationInfo);
     }
@@ -60,6 +60,9 @@ const CreateEmployee = () => {
           <div className="create-form">
             <div className="create-form-div">
               <h1>Create an Employee</h1>
+              <p style={{marginBottom: '1rem', fontSize: '14px'}}>
+                Create an employee to add a risk assesment form card
+              </p>
               {message && <Message variant="danger">{message}</Message>}
               {error && <Message variant="danger">{error}</Message>}
               {loading && <Loader />}

@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+
+.report {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 1rem;
+    background: #efefef;
+}
+
+.report a {
+    text-decoration: none;
+    color: #494949;
+}
+
+.report a:hover  {
+    color: #000000;
+}
+
+.report p {
+    font-size: 14px;
+}
+
+.main-page-nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #000000;
+}
+
+.main-page-nav .main-page-nav-profile {
+    display: flex;
+}
+
+.main-page-nav .main-page-nav-profile .profile-user{
+    display: flex;
+    padding-left: 10px;
+}
+.main-page-nav .main-page-nav-profile .profile-user p{
+    padding-right: 10px;
+}
+
+.side-bar-details, .sidebar-logout {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    color: #494949;
+}
+
+.side-bar-details div, .sidebar-logout div{
+    margin: 10px 0;
+    padding: 10px 10px;
+}
+
+/* Current  */
+.current {
+    background: #c5c7c9;
+    padding: 0.7rem 0;
+}
+
+.fa-search {
+    padding-right: 10px;
+}
+
+.fa-bell {
+    padding-right: 10px;
+    border-right: 1px solid #DFE0EB;
+}
+
+/* Risk form  */
+.risk-form  {
+    padding: 2rem;
+}
+
+.risk-form .risk-form-div .risk-form-title {
+    margin: 2rem 0;
+    padding: 1rem 15px;
+    box-shadow: #2E8FFF 0px 10px 10px -10px;
+    background: #ffffff;
+}
+
+.risk-form .risk-form-div .risk-form-title h3 {
+    color: #2E8FFF;
+    font-size: 24px;
+}
+
+.risk-input-group-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.risk-input-group-1 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-form-input label {
+    display: block;
+    font-size: 14px;
+}
+
+.risk-form-input form div {
+    margin-bottom: 1rem;
+}
+
+.risk-form-input form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(46, 143, 255, 0.7);
+    background: transparent;
+    outline: #ffffff;
+}
+
+.risk-form-input form select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(46, 143, 255, 0.7);
+    background: transparent;
+    outline: #ffffff;
+}
+
+.risk-input-group-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.risk-input-group-2 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-input-group-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+}
+
+.risk-input-group-3 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-input-group-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.risk-input-group-4 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-input-group-5 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.risk-input-group-5 div{
+    background: #F9FBFE;
+    box-shadow: 0px 4px 4px rgba(46, 143, 255, 0.15);
+    padding: 10px;
+}
+
+.risk-form-btn button {
+    width: 100%;
+    background: #2E8FFF;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+.risk-form-btn button:hover {
+    background: #146ed6;
+}
+
+@media screen and (max-width: 768px) {
+    .main-page{
+        width: 100vw;
+    }
+    .main-page-nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-page-nav div:first-child{
+        padding-bottom: 1rem;
+    }
+    .risk-form  {
+        padding: 1rem;
+    }
+}

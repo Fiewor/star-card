@@ -1,67 +1,68 @@
-.signup {
+.employLogin {
 }
 
-.signup-bg {
+.employLogin-bg {
     /* flex: 2; */
     height: 100vh;
     width: 100%;
     background: url('../assets/bg_login.png') no-repeat center center/cover;
 }
 
-.signup-bg div {
+.employLogin-bg div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     height: 100%;
-    color: #fff;
+    color: #000;
 }
 
-.signup-bg div h3 {
+.employLogin-bg div h3 {
     font-size: 4rem;
     font-weight: 400;
+    color: #fff;
     text-shadow: 1px 3px 1px #000;
 }
 
-.signup-bg div p {
+.employLogin-bg div p {
     font-weight: 300;
     text-shadow: 1px 1px 1px #fff;
     font-size: 18px;
     color: #000;
 }
 
-.signup-container {
+.employLogin-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.signup-form {
+.employLogin-form {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.signup-form-div {
-    /* padding: 2rem; */
-}
+/* .employLogin-form-div {
+    padding: 2rem;
+} */
 
-.signup-form div h1 {
+.employLogin-form div h1 {
     text-align: left;
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 
-.signup-form div form div {
+.employLogin-form div form div {
     margin-bottom: 1.5rem;
 }
 
-.signup-form div form {
+.employLogin-form div form {
     width: 100%;
 }
 
-.signup-form div form input {
+.employLogin-form div form input {
     width: 100%;
     border: none;
     background: transparent;
@@ -76,7 +77,7 @@
     margin-top: 0.7rem;
 }
 
-.signup-btn {
+.employLogin-btn {
     padding: 5px 10px 5px 10px;
     width: 100%;
     background: #000;
@@ -86,23 +87,23 @@
 }
 
 @media (max-width: 768px) {
-    .signup-bg {
+    .employLogin-bg {
         display: none;
     }
-    .signup-container {
+    .employLogin-container {
         padding-top: 1em;
     }
-    .signup-form div form {
+    .employLogin-form div form {
         width: 100%;
     }
-    .signup-form div h1 {
+    .employLogin-form div h1 {
         font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
-    .signup-form div form input {
+    .employLogin-form div form input {
         border-bottom: 1px solid #000;
     }
-    .signup-btn {
+    .employLogin-btn {
         padding: 5px 10px 5px 10px;
         width: 50%;
         justify-self: center;

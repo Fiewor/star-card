@@ -51,7 +51,7 @@ const Dashboard = ({ history }) => {
   const fetchCard = async () => {
     const token = JSON.parse(localStorage.getItem('organizationInfo'));
 
-    console.log(token, organizationInfo);
+    console.log(token);
     const config = {
       headers: {
         Authorization: token.access_token,
@@ -70,7 +70,6 @@ const Dashboard = ({ history }) => {
   };
   console.log(cards);
   useEffect(() => {
-    
     fetchUserFromLocalStorage();
     fetchCard();
     // setOrganisationInfo(fetchUserFromLocalStorage());

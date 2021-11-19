@@ -6,11 +6,12 @@ import Message from "../components/Message";
 import "../components/Login.css";
 import { Link } from "react-router-dom";
 import Loader from "../components/Loader";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const history = useHistory();
   const dispatch = useDispatch();
 
   const organizationLogin = useSelector((state) => state.organizationLogin);
@@ -18,13 +19,14 @@ const Login = () => {
 
   useEffect(() => {
     if (organizationInfo) {
-      window.location = "/dashboard";
+      history.push("/dashboard")
     }
   }, [ organizationInfo]);
 
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
+    // history.push("/dashboard")
   };
   return (
     <>

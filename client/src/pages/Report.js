@@ -8,6 +8,8 @@ import { employeeLogout, createCards } from "../actions/employeeActions";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 //location, hazard_description, risked_resource, probability, impact,  existing_control, existing_prevention, rating, other_info, media
+import { useHistory } from "react-router-dom";
+
 const Report = () => {
   const [location, setLocation] = useState("");
   const [hazard_description, setHazard_description] = useState("");
@@ -20,6 +22,7 @@ const Report = () => {
   const [other_info, setOther_info] = useState("");
   // const [media, setMedia] = useState("");
   const [message, setMessage] = useState(null);
+  const history = useHistory();
 
   const dispatch = useDispatch();
   const [width, setWidth] = useState(window.innerWidth);
@@ -46,7 +49,7 @@ const Report = () => {
   useEffect(() => {
     if (cardInfo) {
       alert("Card Created Successfully");
-      // history.push("/report");
+      history.push("/dashboard");
     }
     if (error) {
       setMessage(error);
@@ -69,6 +72,8 @@ const Report = () => {
         // media
       )
     );
+    
+    // e.value=""
   };
 
   return (

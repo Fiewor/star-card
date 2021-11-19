@@ -7,12 +7,14 @@ import { Link } from "react-router-dom";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import "../components/CreateEmployee.css";
+import { useHistory } from "react-router-dom";
 
-const CreateEmployee = ({history}) => {
+const CreateEmployee = () => {
   const [employee_name, setEmployee_name] = useState("");
   const [employee_email, setEmployee_email] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState(null);
+  const history = useHistory();
 
   const dispatch = useDispatch();
 
@@ -35,6 +37,7 @@ const CreateEmployee = ({history}) => {
       //redirect to employee list page
       // window.location = "/dashboard";
       alert("Employee Created Successfully");
+      history.push("/employee-login")
     }
   }, [employeeInfo]);
 

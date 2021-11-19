@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -9,33 +10,33 @@ const Sidebar = () => {
         <div className="sidebar-logo">
           <div>
             <h3>Star Card</h3>
-            <p>PH Free Service</p>
+            <p></p>
           </div>
         </div>
 
         <div className="side-bar-details">
           <div>
-            <a href="#">
+            <Link to="/dashboard">
               <p style={{ marginBottom: "1rem" }}>
                 <i className="fas fa-columns"></i> Dashboard
               </p>
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="/report">
               <p className="current">
                 <i className="fas fa-user-cog"></i> Reports
               </p>
-            </a>
-            <a href="/create-employee">
+            </Link>
+            <Link to="/create-employee">
               <p className="current">
                 <i className="fas fa-user-cog"></i> Create Employee
               </p>
-            </a>
-            <a href="/report">
+            </Link>
+            <Link to="/report">
               <p className="current">
                 <i className="fas fa-user-cog"></i> Create Card
               </p>
-            </a>
+            </Link>
           </div>
         </div>
 

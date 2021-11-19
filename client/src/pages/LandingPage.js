@@ -10,9 +10,6 @@ const LandingPage = () => {
             <div className="main-container">
                 <div className="hero-container">
                     <h1>Be a Hero to your Heroes</h1>
-                    <h4>Create a workspace that enhances your teams safety and 
-                        productivity with our risk analysis reporting tool
-                    </h4>
                     <h3>Create a workspace that enhances your teams safety and 
                         productivity with our risk analysis reporting tool
                     </h3>

@@ -1,10 +1,7 @@
 ## Table of Contents
+- [Overview](#overview)
 - [Problem Statement](#the-problem)
-<<<<<<< HEAD
-- [Our solution](#the-solution)
-=======
 - [Our solution](#our-solution)
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 - [The Architecture](#the-architecture)
 - [Technologies](#technologies)
 - [Demo Video Link](#demo-video-link)
@@ -13,69 +10,35 @@
 - [The Team](#the-team)
 - [Licenses](#licenses)
 
+## Overview
+During the pandemic the immense contribution and importance of our everyday heroes was undoubtedly spotlighted.
+The most important form of reward and help that can be offered to these unsung heroes is the provision of a safe and healthy environment for them to carry out their amazing duties.
+This can be fostered through collaboration thereby enhancing workplace safety and productivity for our everyday heros.
 
-<<<<<<< HEAD
-## The Problem:
-
-As of early October 2021, NOAA National Centers for Environmental Information states that the United States has experienced 18 weather/climate disasters with losses exceeding $1 billion each. 
-Year-to-date, this is a record high. 
-The average number of billion-dollar disasters per year is 7.
-
-Certain occupational risks, such as injuries, noise, carcinogenic agents, airborne particles and ergonomic risks account for a substantial part of the burden of chronic diseases: 37% of all cases of back pain, 16% of hearing loss, 13% of chronic obstructive pulmonary disease, 11% of asthma, 8% of injuries, 9% of lung cancer, 2% of leukaemia and 8% of depression.
-
-Annually 12.2 million people, mostly in developing countries, die from noncommunicable diseases while still of active working age.
-
-Work-related health problems result in an economic loss of 4–6% of GDP for most countries.
-
-The basic health services to prevent occupational and work-related diseases cost on average between US$ 18 and US$ 60 (purchasing power parity) per worker.
-About 70% of workers do not have any insurance to compensate them in case of occupational diseases and injuries.
+One way of doing this is by giving the heroes a platform to report their workplace risks and hazards. Such a  solution can easily be accessed through the effectively display of the hazard and risks in a descriptive and visual manner making it easier for the authorities responsible within the workplace and in the larger society to quickly take necessary actions to mitigate such hazards.
 
 
-Research has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
+## The problem
+According to the [International Labour Organisation](https://www.ilo.org/moscow/areas-of-work/occupational-safety-and-health/WCMS_249278/lang--en/index.htm),
+> some 2.3 million women and men around the world succumb to work-related accidents or diseases every year; this corresponds to over 6000 deaths every single day. Worldwide, there are around 340 million occupational accidents and 160 million victims of work-related illnesses annually.
 
-#### Reference: https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health
-
-## The Solution:
-
-A  simple web application that;
-1. Enhances safety and productivity of heros(field doctors and nurses, delivery drivers, news reporters, hardware engineers, security personnels e.t.c) by empowering them to submit text messages with evidences (images, videos) of hazards in record time to emergency response teams inorder to evaluate and mitigate disasters in record time.
-
-<!-- 2. Enables other heros such as frontline security software developers to recieve, visualize and evaluate notifications about bugs from various apps on the same dashboard in record time.
-Software users can reports bugs via  text, screenshots, screencasts, silent and voiced screen recording of such bugs. -->
-
-2. Preserve climate by helping preserve more trees that could be used to produce papers and cards for reporting hazards in developing or underdeveloped regions.
-=======
-## Overview:
-Reporting workplace incidents and hazard is not about calling out (or blaming) certain people or environments.
-
-It's about fostering  safety and productivity and as such, employees and supervisors are both part of the solution as day-to-day heros when it comes to mitigating risk.
-
-This helps to gain a greater understanding of where risks are occurring and ensure  hazards does not grow into a more serious risk.
-
-As of early October 2021, research shows that  the United States has experienced 18 weather disasters with losses exceeding $1 billion each.
-
-Annually 12.2 million people, mostly in developing countries, die from noncommunicable diseases while still of active working age.
-
-Excessive Noise, and ergonomic hazards could cause accidents, litigations and depression.
-
-## What's the problem?
-A few deterrent can discourage employees from reporting risk such; 
- 1. Pressure to get the job done in a short amount of time.
-2.  Lack of feedback from reported incidents.
+Currently, in some companies in Africa, hazards are usually reported physically using 'safety cards'. This current approach has a few limitations/deterrents which can discourage employees from reporting risk such as:
+- Pressure to get the job done in a short amount of time leaves, in most scenarios, employees no time to even go through the strenuous physical process of collecting cards, filling them with pen, going back to the office of the supervisor to submit, waiting for the processing and so on.
+- Lack of feedback from reported incidents - it has been [noted](https://safetydifferently.com/stop-start-cards/) that these cards are often difficult to sort and are often unattended to.
 
 ## Our Solution 
-Research has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
+[Research](https://www.who.int/en/news-room/fact-sheets/detail/protecting-workers'-health) has demonstrated that workplace health initiatives can help reduce sick leave absenteeism by 27% and health-care costs for companies by 26%.
 
-So, we created StarCard to be a central platform for real-time visibility into various hazards.
+So, we created Star Card to be an easily accessible web platform for real-time reporting and visibility into various workplace risks and hazards.
 
+The [importance](https://www.uniprint.com.au/blogs/news/why-it-s-important-to-report-hazards-in-the-workplace#:~:text=Why%20Is%20Hazard%20Reporting%20Important,creating%20a%20safe%20working%20environment.&text=Most%20importantly%2C%20it%20ensures%20that,quality%20data%20to%20be%20collected) of reporting hazards cannot be over-emphasized so we aim to make the process easier and more efficient.
 ### Here is how it works:
-- The individual to witness a hazard
-  - gets onto the web app, 
-  - signs up,
+The workplace hero (supervisor or employee) who is witnessing an hazard
+  - opens the web app, 
+  - signs up
   - fills a web form to make prioritized reports of hazards as text, picture and/or video format.
   - then submits.
 - The data submitted is displayed on a dashboard for first responders to evaluate and prioritize hazard reports.
->>>>>>> 02dafd5f997fd1d4ece082e74a56fbef0b5c590c
 
 ## The Architecture:
 
@@ -83,7 +46,7 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 
 <!-- The Technologies/Hardwares/Softwares/Libraries/Datasets/APIs/Services/Systems used: -->
 ## Technologies
-- IBM Cloud
+- IBM Cloud (Cloud Foundry)
 - React
 - PHP(Laravel)
 

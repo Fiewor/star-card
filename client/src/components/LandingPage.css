@@ -5,9 +5,11 @@
     background: linear-gradient(245deg, #97c7ff52 5%, #caffe500 30%, #cad0ff52 62%, #bcdbffc2 99%);
     flex-direction: column;
     justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .hero-container{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
@@ -15,7 +17,7 @@
     margin: 0 2rem;
 }
 .hero-container h1{
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 700;
     color: #6d6a6a;
     line-height: 1;
@@ -35,6 +37,7 @@
 .button-container{
     display: flex;
     justify-content: flex-start;
+    
 }
 
 .button-container button{
@@ -46,20 +49,36 @@
 .button-container button:hover{
     cursor: pointer;
     background: #1875e0;
+
 }
 
-.button-container button:first-child{
+.button-container .workspace-signup{
     background: #2e8fff;
     box-shadow: 0px 4px 10px rgba(16, 156, 241, 0.24);
     border: none;
     color: #fff;
     margin-right: 1rem;
+    font-size: 15px;
 }
 
-.button-container button:last-child{
-    border: 1px solid black;
+.button-container .workspace-signup:hover {
+    background-color: #1875e0;
+    color: #fff;
+    transition: all ease 0.4s;
+
+}
+
+.button-container .pricing {
+    border: 1px solid #334;
     background: transparent;
     color: #000;
+    font-size: 15px;
+}
+
+.button-container .pricing:hover {
+    cursor: pointer;
+    background: #23cc31;
+    border: none;
 }
 
 .secondary-container{
@@ -96,7 +115,7 @@ a:hover{
         width: 80%;
     }
     .hero-container h1{
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
     .button-container button{
         padding: 0.5rem 1rem;
@@ -107,5 +126,11 @@ a:hover{
     }
     .secondary-container div p{
         font-size: 1rem;
+    }
+
+    .hero-container h3 {
+        color: #8f8f8f;
+        padding: 1rem 0;
+        font-size: 16px;
     }
 }

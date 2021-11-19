@@ -51,7 +51,7 @@
 .login-form div h1 {
     text-align: left;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.1rem;
 }
 
 .login-form div form div {
@@ -86,7 +86,7 @@
     padding: 1em 0;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .login-bg {
         display: none;
     }
@@ -115,4 +115,19 @@
         text-align: start;
         font-size: 11px;
     }
+
+    .login-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .login-form div h1 {
+        text-align: left;
+        font-size: 2.5rem;
+        margin-bottom: 0.1rem;
+    }
+        
 }

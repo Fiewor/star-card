@@ -12,7 +12,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
-  const dispatch = useDispatch();
+  const dispatch = useDispatch(); 
 
   const organizationLogin = useSelector((state) => state.organizationLogin);
   const { loading, error, success, organizationInfo } = organizationLogin;
@@ -26,7 +26,7 @@ const Login = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     dispatch(login(email, password));
-    // history.push("/dashboard")
+    history.push("/dashboard")
   };
   return (
     <>
@@ -35,6 +35,9 @@ const Login = () => {
           <div className="login-form">
             <div className="login-form-div">
               <h1>Welcome</h1>
+              <p style={{marginBottom: '1.1rem', fontSize: '14px'}}>
+                Login to Star Card to add a risk assesment form
+              </p>
               {success && <Message variant="success">{success}</Message>}
                 {error && <Message variant="danger">{error}</Message>}
                 {loading && <Loader />}

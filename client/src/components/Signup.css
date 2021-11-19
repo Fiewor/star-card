@@ -34,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100vh;
 }
 
 .signup-form {
@@ -85,7 +86,7 @@
     padding: 1em 0;
 }
 
-@media (max-width: 768px) {
+@media only screen and  (max-width: 768px) {
     .signup-bg {
         display: none;
     }
@@ -114,4 +115,36 @@
         text-align: start;
         font-size: 11px;
     }
+
+    .signup-form-div {
+        padding: 2rem;
+        /* width: 319px; */
+    }
+}
+
+@media only screen and  (max-width: 280px) {
+    .signup-form-div {
+        /* padding: 2rem; */
+        width: 250px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

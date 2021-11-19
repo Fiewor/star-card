@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <footer>
             <div className="footer-container">
-                <div className="social-container">
+                <div className="social-container footer-nav">
                     <p>Starcard</p>
                     <div className="social-links">
                         <i class="fas fa-envelope"></i>
@@ -15,21 +15,20 @@ const Footer = () => {
                         <i class="fab fa-twitter"></i>
                     </div>
                 </div>
-                <div className="footer-secondary-container">
+                <div className="footer-secondary-container footer-nav">
                     <p>Sitemap</p>
                     <Link to="">Pricing</Link>
                     <Link to="/signup">Sign in</Link>
                     <Link>Create Workspace</Link>
                 </div>
-                <div className="footer-secondary-container">
+                <div className="footer-secondary-container footer-nav">
                     <p>Discover</p>
                     <Link to="">Culture</Link>
                     <Link to="">Cuisine</Link>
                     <Link to="">Community</Link>
                     <Link to="">Companionship</Link>
                 </div>
-            </div>
-            <div/>
+            </div>            
         </footer>
     )
 }

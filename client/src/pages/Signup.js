@@ -24,7 +24,7 @@ const Signup = ({ history }) => {
 
   const organizationRegister = useSelector(
     (state) => state.organizationRegister
-  );
+  ); 
   const { loading, error, organizationInfo } = organizationRegister;
 
   useEffect(() => {
@@ -59,6 +59,9 @@ const Signup = ({ history }) => {
           <div className="signup-form">
             <div className="signup-form-div">
               <h1>Sign Up</h1>
+              <p style={{marginBottom: '1rem', fontSize: '14px'}}>
+                Sign up to Star Card to add a risk assesment form
+              </p>
               {message && <Message variant="danger">{message}</Message>}
               {error && <Message variant="danger">{error}</Message>}
               {loading && <Loader />}

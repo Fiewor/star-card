@@ -7,6 +7,8 @@ import "../components/Login.css";
 import { Link } from "react-router-dom";
 import Loader from "../components/Loader";
 import { useHistory } from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -30,6 +32,7 @@ const Login = () => {
   };
   return (
     <>
+    <Header/>
       <section className="login">
         <div className="login-container">
           <div className="login-form">
@@ -73,15 +76,10 @@ const Login = () => {
               </form>
             </div>
           </div>
-
-          <div className="login-bg">
-            <div>
-              <h3>Star Card</h3>
-              <p>Secure your risk assesment data entry</p>
-            </div>
-          </div>
+          
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

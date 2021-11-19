@@ -7,7 +7,9 @@ import "../components/Signup.css";
 import { Link } from "react-router-dom";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import WorkspaceButton from "../components/WorkspaceButton"
 //name, email, phone, organization, industry, password, password_confirmation
 
 const Signup = ({ history }) => {
@@ -54,124 +56,129 @@ const Signup = ({ history }) => {
   
   return (
     <>
+      <Header/>
       <section className="signup">
-        <div className="signup-container">
-          <div className="signup-form">
-            <div className="signup-form-div">
-              <h1>Sign Up</h1>
-              {message && <Message variant="danger">{message}</Message>}
-              {error && <Message variant="danger">{error}</Message>}
-              {loading && <Loader />}
-              <form onSubmit={submitHandler}>
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    name="name"
-                    required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                  />
-                </div>
+      <h1>Create Workspace</h1>
+                <div className="signup-container">
+                    <div className="signup-form">
+                        <div className="signup-form-div">
+                          <h3>Select Industry</h3>
+                          <div className="industry-container">
+                              <button className="industry-type">Health</button>
+                              <button className="industry-type">Education</button>
+                              <button className="industry-type">First Response</button>
+                              <button className="industry-type">Military</button>
+                              <button className="industry-type">Construction</button>
+                              <button className="industry-type">Policing</button>
+                              <button className="industry-type">Chain Store</button>
+                              <button className="industry-type">IT</button>
+                          </div>
+                          <h3>Work Information</h3>
+                          {message && <Message variant="danger">{message}</Message>}
+                          {error && <Message variant="danger">{error}</Message>}
+                          {loading && <Loader />}
+                          <form onSubmit={submitHandler}>
+                            <div>
+                              <input
+                                type="text"
+                                placeholder="Name"
+                                name="name"
+                                required
+                                value={name}
+                                onChange={(e) => setName(e.target.value)}
+                              />
+                            </div>
 
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
+                            <div>
+                              <input
+                                type="email"
+                                placeholder="Email"
+                                name="email"
+                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                              />
+                            </div>
 
-                <div>
-                  <input
-                    type="text"
-                    name="phone"
-                    placeholder="Phone Number"
-                    required
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                  />
-                </div>
+                            <div>
+                              <input
+                                type="text"
+                                name="phone"
+                                placeholder="Phone Number"
+                                required
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                              />
+                            </div>
 
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Organization Name"
-                    name="organization"
-                    required
-                    value={organization}
-                    onChange={(e) => setOrganization(e.target.value)}
-                  />
-                </div>
+                            <div>
+                              <input
+                                type="text"
+                                placeholder="Organization Name"
+                                name="organization"
+                                required
+                                value={organization}
+                                onChange={(e) => setOrganization(e.target.value)}
+                              />
+                            </div>
 
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Industry"
-                    name="industry"
-                    required
-                    value={industry}
-                    onChange={(e) => setIndustry(e.target.value)}
-                  />
-                </div>
+                            <div>
+                              <input
+                                type="text"
+                                placeholder="Industry"
+                                name="industry"
+                                required
+                                value={industry}
+                                onChange={(e) => setIndustry(e.target.value)}
+                              />
+                            </div>
 
-                <div>
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    name="password"
-                    required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
+                            <div>
+                              <input
+                                type="password"
+                                placeholder="Password"
+                                name="password"
+                                required
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                              />
+                            </div>
 
-                <div>
-                  <input
-                    type="password"
-                    placeholder="Confirm Password"
-                    name="password_confirmation"
-                    required
-                    value={password_confirmation}
-                    onChange={(e) => setPassword_confirmation(e.target.value)}
-                  />
-                  <p className="forgot-pass">
-                    <a href="#">Forgot password ?</a>
-                  </p>
-                </div>
+                            <div>
+                              <input
+                                type="password"
+                                placeholder="Confirm Password"
+                                name="password_confirmation"
+                                required
+                                value={password_confirmation}
+                                onChange={(e) => setPassword_confirmation(e.target.value)}
+                              />
+                              <p className="forgot-pass">
+                                <a href="#">Forgot password ?</a>
+                              </p>
+                            </div>
 
-                <div>
-                  <button
-                    className="signup-btn"
-                    type="submit"
-                    style={{ cursor: "pointer" }}
-                  >
-                    Sign up
-                  </button>
-                </div>
+                            <div>
+                              <WorkspaceButton/>
+                              {/* <button
+                                className="signup-btn"
+                                type="submit"
+                                style={{ cursor: "pointer" }}
+                              >
+                                Sign up
+                              </button> */}
+                            </div>
 
-                <p className="sign-up-link">
-                  Already have an account? <Link to="/login">Login . . .</Link>
-                </p>
-              </form>
+                            <p className="sign-up-link">
+                              Already have an account? <Link to="/login">Login . . .</Link>
+                            </p>
+                          </form>
             </div>
           </div>
 
-          <div className="signup-bg">
-            <div>
-              <h3>Star Card</h3>
-              <p>
-                Keep heros safe and more productive by giving them a web-based
-                platform to report hazards and get real-time prioritized
-                response
-              </p>
-            </div>
-          </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

@@ -1,50 +1,33 @@
 .signup {
-}
-
-.signup-bg {
-    /* flex: 2; */
-    height: 100vh;
-    width: 100%;
-    background: url('../assets/bg_login.png') no-repeat center center/cover;
-}
-
-.signup-bg div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    height: 100%;
-    color: #fff;
+    background: linear-gradient(245deg, #97c7ff52 5%, #caffe500 30%, #cad0ff52 62%, #bcdbffc2 99%);
+    color: #676868;
 }
-
-.signup-bg div h3 {
-    font-size: 4rem;
-    font-weight: 400;
-    text-shadow: 1px 3px 1px #000;
-}
-
-.signup-bg div p {
-    font-weight: 300;
-    text-shadow: 1px 1px 1px #fff;
-    font-size: 18px;
-    color: #000;
+.signup h1{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: #494949;
 }
 
 .signup-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    padding: 3rem 0;
 }
 
 .signup-form {
-    width: 100%;
+    max-width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(64, 123, 255, 0.8);
+    padding: 1rem 2rem;
 }
 
-.signup-form-div {
-    /* padding: 2rem; */
+.signup-form-div h3{
+    padding: 1rem 0;
 }
 
 .signup-form div h1 {
@@ -70,30 +53,47 @@
     padding-bottom: 0.5rem;
 }
 
+.industry-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.industry-type{
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0.5rem 0;
+    margin: 0.4rem;
+    width: 10vw;
+    max-height: 3vw;
+    color: #000;
+}
+.industry-type:hover{
+    cursor: pointer;
+    background: gray;
+    color: #fff;
+}
+
 .forgot-pass {
     font-size: 14px;
     text-align: right;
     margin-top: 0.7rem;
 }
 
-.signup-btn {
-    padding: 5px 10px 5px 10px;
-    width: 100%;
-    background: #000;
-    color: #fff;
-    border: none;
-    padding: 1em 0;
-}
-
 @media (max-width: 768px) {
-    .signup-bg {
-        display: none;
+    .signup h1{
+        padding-top: 1.5rem;
+        font-size: 1.7rem;
+    }
+    .signup-form {
+        max-width: 80vw;
+        padding: 0.5rem 1rem;
     }
     .signup-container {
         padding-top: 1em;
-    }
-    .signup-form div form {
-        width: 100%;
     }
     .signup-form div h1 {
         font-size: 1.5rem;
@@ -102,13 +102,19 @@
     .signup-form div form input {
         border-bottom: 1px solid #000;
     }
-    .signup-btn {
-        padding: 5px 10px 5px 10px;
-        width: 50%;
-        justify-self: center;
-    }
     .sign-up-link{
         font-size: 0.7rem;
+    }
+    .industry-container{
+        justify-content: space-around;
+    }
+    .industry-type{
+        border: 1px solid #000;
+        border-radius: 5px;
+        background: #fff;
+        margin: 0.4rem;
+        width: 27vw;
+        max-height: 15vw;
     }
     .forgot-pass{
         text-align: start;

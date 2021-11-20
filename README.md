@@ -55,6 +55,9 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 - PHP(Laravel)
 - Figma
 - Trello
+- Heroku Technologies
+- YouCut Video Editor (For Composing and Editing Our Demo Video )
+- Pexel (For Publicly Available Videos that illustrates the journey of of solution)
 
 ## Demo Video Link:
 

@@ -3,8 +3,8 @@
 }
 .main-container {
     background: linear-gradient(245deg, #97c7ff52 5%, #caffe500 30%, #cad0ff52 62%, #bcdbffc2 99%);
-    flex-direction: column;
-    justify-content: center;
+    /* flex-direction: column; */
+    justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }

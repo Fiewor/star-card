@@ -57,7 +57,7 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 - Trello
 - Heroku Technologies
 - YouCut Video Editor (For Composing and Editing Our Demo Video )
-- Pexel (For Publicly Available Videos that illustrates the journey of of solution)
+- Pexel (For Publicly Available Videos that illustrates the journey of our solution)
 
 ## Demo Video Link:
 

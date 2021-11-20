@@ -26,7 +26,7 @@ const CreateEmployee = () => {
 
   useEffect(() => {
     if (!organizationInfo) {
-      history.push("/employee-login");
+      history.push("/create-employee");
     } else {
       // console.log(OrganizationInfo);
     }
@@ -35,7 +35,7 @@ const CreateEmployee = () => {
   useEffect(() => {
     if (employeeInfo) {
       //redirect to employee list page
-      // window.location = "/dashboard";
+      window.location = "/employee-login";
       alert("Employee Created Successfully");
       history.push("/employee-login")
     }
@@ -50,7 +50,7 @@ const CreateEmployee = () => {
           password,
         )
       );
-    
+      history.push("/employee-login")
   };
   
   return (

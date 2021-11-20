@@ -49,9 +49,9 @@ const Sidebar = () => {
             </p>
 
             <p>
-              <a href="#">
+              <Link to="/login">
                 <i className="fas fa-sign-out-alt"></i> Logout
-              </a>
+              </Link>
             </p>
           </div>
         </div>

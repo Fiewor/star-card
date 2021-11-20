@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 import {
   ORGANIZATION_LOGIN_REQUEST,
   ORGANIZATION_LOGIN_SUCCESS,
@@ -18,11 +18,11 @@ import {
   GET_ALL_EMPLOYEE_FAIL,
   GET_ALL_CARDS_REQUEST,
   GET_ALL_CARDS_SUCCESS,
-  GET_ALL_CARDS_FAIL
-} from "../constants/organizationConstants";
-import { BACKEND_BASE_URL } from "../backendUrl";
+  GET_ALL_CARDS_FAIL,
+} from '../constants/organizationConstants';
+import { BACKEND_BASE_URL } from '../backendUrl';
 
-export const login = (email, password) => async (dispatch) => {
+export const login = (email, password) => async dispatch => {
   try {
     dispatch({
       type: ORGANIZATION_LOGIN_REQUEST,
@@ -30,18 +30,22 @@ export const login = (email, password) => async (dispatch) => {
 
     const config = {
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     };
 
-    const { data } = await axios.post(`${BACKEND_BASE_URL}api/login`, { email, password },  config );
+    const { data } = await axios.post(
+      `${BACKEND_BASE_URL}api/login`,
+      { email, password },
+      config
+    );
 
     dispatch({
       type: ORGANIZATION_LOGIN_SUCCESS,
       payload: data,
     });
 
-    localStorage.setItem("organizationInfo", JSON.stringify(data));
+    localStorage.setItem('organizationInfo', JSON.stringify(data));
   } catch (error) {
     dispatch({
       type: ORGANIZATION_LOGIN_FAIL,
@@ -53,14 +57,23 @@ export const login = (email, password) => async (dispatch) => {
   }
 };
 
-export const logout = () => (dispatch) => {
-  localStorage.removeItem("organizationInfo");
+export const logout = () => dispatch => {
+  localStorage.removeItem('organizationInfo');
   dispatch({ type: ORGANIZATION_LOGOUT });
-  document.location.href = "/login";
+  document.location.href = '/login';
 };
 
 export const register =
-  (name, email, phone, organization, industry, password, password_confirmation) => async (dispatch) => {
+  (
+    name,
+    email,
+    phone,
+    organization,
+    industry,
+    password,
+    password_confirmation
+  ) =>
+  async dispatch => {
     try {
       dispatch({
         type: ORGANIZATION_REGISTER_REQUEST,
@@ -68,29 +81,42 @@ export const register =
 
       const config = {
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
       };
 
-      const { data } = await axios.post( `${BACKEND_BASE_URL}api/register`, { name, email, phone, organization, industry, password, password_confirmation }, config);
+      const { data } = await axios.post(
+        `${BACKEND_BASE_URL}api/register`,
+        {
+          name,
+          email,
+          phone,
+          organization,
+          industry,
+          password,
+          password_confirmation,
+        },
+        config
+      );
 
       dispatch({
         type: ORGANIZATION_REGISTER_SUCCESS,
         payload: data,
       });
 
-      dispatch({
-        type: ORGANIZATION_LOGIN_SUCCESS,
-        payload: data,
-      });
+      // dispatch({
+      //   type: ORGANIZATION_LOGIN_SUCCESS,
+      //   payload: data,
+      // });
 
-      localStorage.setItem("OrganizationInfo", JSON.stringify(data));
+      // localStorage.setItem("OrganizationInfo", JSON.stringify(data));
     } catch (error) {
+      console.log(error.response);
       dispatch({
         type: ORGANIZATION_REGISTER_FAIL,
         payload:
           error.response && error.response.data.message
-            ? error.response.data.message
+            ? error.response.data.message.password[0]
             : error.message,
       });
     }
@@ -106,26 +132,29 @@ export const createEmployees =
       const {
         organizationLogin: { organizationInfo },
       } = getState();
-  
+
       const config = {
         headers: {
           Authorization: ` ${organizationInfo.access_token}`,
         },
       };
 
-      const { data } = await axios.post( `${BACKEND_BASE_URL}api/create_employee`, { employee_name, employee_email, password }, config);
+      const { data } = await axios.post(
+        `${BACKEND_BASE_URL}api/create_employee`,
+        { employee_name, employee_email, password },
+        config
+      );
 
       dispatch({
         type: CREATE_EMPLOYEE_REQUEST_SUCCESS,
         payload: data,
       });
-
-    }  catch (error) {
+    } catch (error) {
       const message =
         error.response && error.response.data.message
           ? error.response.data.message
           : error.message;
-      if (message === "unauthenticated") {
+      if (message === 'unauthenticated') {
         dispatch(logout());
       }
       dispatch({
@@ -136,42 +165,44 @@ export const createEmployees =
   };
 
 export const getOrganizationDetails = () => async (dispatch, getState) => {
-    try {
-      dispatch({
-        type: ORGANIZATION_DETAILS_REQUEST,
-      });
-  
-      const {
-        organizationLogin: { organizationInfo },
-      } = getState();
-  
-      const config = {
-        headers: {
-          Authorization: ` ${organizationInfo.access_token}`,
-        },
-      };
-  
-      const { data } = await axios.get(`${BACKEND_BASE_URL}api/organization_details`, config);
-  
-      dispatch({
-        type: ORGANIZATION_DETAILS_SUCCESS,
-        payload: data,
-      });
-    } catch (error) {
-      const message =
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message;
-      if (message === "unauthenticated") {
-        dispatch(logout());
-      }
-      dispatch({
-        type: ORGANIZATION_DETAILS_FAIL,
-        payload: message,
-      });
-    }
-  };
+  try {
+    dispatch({
+      type: ORGANIZATION_DETAILS_REQUEST,
+    });
 
+    const {
+      organizationLogin: { organizationInfo },
+    } = getState();
+
+    const config = {
+      headers: {
+        Authorization: ` ${organizationInfo.access_token}`,
+      },
+    };
+
+    const { data } = await axios.get(
+      `${BACKEND_BASE_URL}api/organization_details`,
+      config
+    );
+
+    dispatch({
+      type: ORGANIZATION_DETAILS_SUCCESS,
+      payload: data,
+    });
+  } catch (error) {
+    const message =
+      error.response && error.response.data.message
+        ? error.response.data.message
+        : error.message;
+    if (message === 'unauthenticated') {
+      dispatch(logout());
+    }
+    dispatch({
+      type: ORGANIZATION_DETAILS_FAIL,
+      payload: message,
+    });
+  }
+};
 
 export const getAllEmployees = () => async (dispatch, getState) => {
   try {
@@ -189,7 +220,10 @@ export const getAllEmployees = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`${BACKEND_BASE_URL}api/all_employees`, config);
+    const { data } = await axios.get(
+      `${BACKEND_BASE_URL}api/all_employees`,
+      config
+    );
 
     dispatch({
       type: GET_ALL_EMPLOYEE_SUCCESS,
@@ -200,7 +234,7 @@ export const getAllEmployees = () => async (dispatch, getState) => {
       error.response && error.response.data.message
         ? error.response.data.message
         : error.message;
-    if (message === "unauthenticated") {
+    if (message === 'unauthenticated') {
       dispatch(logout());
     }
     dispatch({
@@ -226,7 +260,10 @@ export const getAllCards = () => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`${BACKEND_BASE_URL}api/all_cards`, config);
+    const { data } = await axios.get(
+      `${BACKEND_BASE_URL}api/all_cards`,
+      config
+    );
 
     dispatch({
       type: GET_ALL_CARDS_SUCCESS,
@@ -237,7 +274,7 @@ export const getAllCards = () => async (dispatch, getState) => {
       error.response && error.response.data.message
         ? error.response.data.message
         : error.message;
-    if (message === "unauthenticated") {
+    if (message === 'unauthenticated') {
       dispatch(logout());
     }
     dispatch({

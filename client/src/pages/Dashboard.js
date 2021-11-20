@@ -16,7 +16,7 @@ const Dashboard = ({ history }) => {
   // const organizationLogin = useSelector(state => state.organizationLogin);
   // const { organizationInfo } = organizationLogin;
 
-  const [organizationInfo, setOrganisationInfo] = useState('');
+  const [organizationInfo, setOrganisationInfo] = useState(null);
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
@@ -27,20 +27,13 @@ const Dashboard = ({ history }) => {
     };
   }, []);
 
-  // useEffect(() => {
-  //   if (!organizationInfo) { 
-  //     history.push('/login');
-  //   } else {
-  //     // console.log(OrganizationInfo);
-  //   }
-  // }, [dispatch, history]);
-
   const logoutHandler = () => {
     dispatch(logout());
   };
+
   const fetchUserFromLocalStorage = async () => {
     try {
-      const res = await JSON.parse(localStorage.getItem('OrganizationInfo'));
+      const res = await JSON.parse(localStorage.getItem('organizationInfo'));
       setOrganisationInfo(res);
       return res;
     } catch (error) {
@@ -49,9 +42,7 @@ const Dashboard = ({ history }) => {
   };
 
   const fetchCard = async () => {
-    const token = JSON.parse(localStorage.getItem('organizationInfo'));
-
-    console.log(token, organizationInfo);
+    const token = await JSON.parse(localStorage.getItem('organizationInfo'));
     const config = {
       headers: {
         Authorization: token.access_token,
@@ -62,22 +53,19 @@ const Dashboard = ({ history }) => {
         'https://star-card.herokuapp.com/api/all_cards',
         config
       );
-      console.log(res);
       setCards(res.data.data);
     } catch (error) {
       console.log(error);
     }
   };
-  console.log(cards);
+
   useEffect(() => {
-    
     fetchUserFromLocalStorage();
-    fetchCard();
-    // setOrganisationInfo(fetchUserFromLocalStorage());
+    setTimeout(() => {
+      fetchCard();
+    }, 5000);
   }, []);
 
-  console.log(organizationInfo);
-  
   return (
     <section className="dashboard">
       <Sidebar />
@@ -117,10 +105,7 @@ const Dashboard = ({ history }) => {
         <div className="dashboard-details">
           <div className="dashboard-filter">
             <div>
-              <p
-                className="filter" 
-                style={{ paddingRight: '10px' }}
-              >
+              <p className="filter" style={{ paddingRight: '10px' }}>
                 <i className="fab fa fa-facebook"></i> Filter
               </p>
               <div
@@ -172,7 +157,7 @@ const Dashboard = ({ history }) => {
                   probability,
                 }) => {
                   return (
-                    <div className="db-grid">
+                    <div className="db-grid" key={case_id}>
                       <p>{case_id}</p>
                       <p>{employee}</p>
                       <p>{impact}</p>

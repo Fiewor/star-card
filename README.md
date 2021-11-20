@@ -61,7 +61,7 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 ## Live Demo URL: https://star-card.us-south.cf.appdomain.cloud/
 
 ## Road Map
-- Possiblity of frontline workers to report hazards to emergency response team via Computer vision,  Augmented Reality and Livestreaming Technologies.
+- Possiblity of frontline workers to report hazards to emergency response team by uploading images of hazards and livestreaming hazardous events with the help  Augmented Reality and computer vision Technologies.
 - Safety verification, authentication and approval using Blockchain technologies.
 - Relevant Safety policy and  safety compliance recommendations via Machine Learning, federated learning technologies and natural language processing.
 - Possibilities for language translations.

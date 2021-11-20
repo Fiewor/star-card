@@ -1,0 +1,9 @@
+---
+applications:
+- name: star-card
+  path: build/
+  instances: 1
+  buildpacks:
+    - https://github.com/cloudfoundry/staticfile-buildpack.git
+  memory: 256M
+  random-route: true

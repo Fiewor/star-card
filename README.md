@@ -44,6 +44,7 @@ The workplace hero (supervisor or employee) who is witnessing an hazard
 - The compiled dashboard information is now accesible for first responders and other authotities involved to evaluate, prioritize hazard reports and mitigate/handle such hazards appropriately.
 
 ## The Architecture:
+<img src="https://user-images.githubusercontent.com/30049719/142741499-4cf2d0fa-cb46-465e-9b76-721444e39d40.jpg" style="height:80vh;width:100vw;"/>
 
 The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR6j4
 
@@ -59,21 +60,35 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 - YouCut Video Editor (For Composing and Editing Our Demo Video )
 - Pexel (For Publicly Available Videos that illustrates the journey of our solution)
 
-## Demo Video Link:
+- Runs properly on
+  - Samsung tablet
+  - Samsung mobile devices
 
-## Live Demo URL: https://star-card.us-south.cf.appdomain.cloud/
+### Demo Video Link
+https://youtu.be/_L9dyOHRD68
+
+### Live Demo URL
+https://star-card.us-south.cf.appdomain.cloud/
 
 ## Road Map
-- Possiblity of frontline workers to report hazards to emergency response team by uploading images of hazards and livestreaming hazardous events with the help  Augmented Reality and computer vision Technologies.
+Currently, the Star Card Web Application does these:
+- allow user signup and login
+- allow user to create report
+- display hazard/risk report on dashboard
+
+In future versions, we hope to add the following functionalities/feeatures: 
+- Allow frontline workers to report hazards to response team by uploading images of hazards and livestreaming hazardous events with the help 
+- Also utilise augmented reality and computer vision Technologies.
 - Safety verification, authentication and approval using Blockchain technologies.
-- Relevant Safety policy and  safety compliance recommendations via Machine Learning, federated learning technologies and natural language processing.
+- Relevant safety policy and safety compliance recommendations via Machine Learning, federated learning technologies and natural language processing.
 - Possibilities for language translations.
-- Map, Weather and Samsung API integrations.
-- Possibilities for speech-to-text/text-to-speech  input/output.
+- Map and Samsung API integrations.
+- Possibilities for speech-to-text/text-to-speech input/output.
 - Possibilities for using the web app to process hazard reports acquired from agents via sms, ussd and phone calls.
+
 ## The Team
 - [Chukwunonso Richard Iwenor](https://github.com/RichardTalented)
-- [Victory Chukwuma]()
+- [Victory Chukwuma](mailto:victorystephen61@gmail.com)
 - [Israel Chidera Edeh](https://github.com/IsraelChidera)
 - [John Fiewor](https://github.com/Fiewor)
 - [Ani Precious Ebuka]()

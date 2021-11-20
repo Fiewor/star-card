@@ -42,7 +42,7 @@ header a:hover{
         background: linear-gradient(245deg, #97c7ff52 4%, #caffe500 25%, #cad0ff52 62.41%, #bcdbffc2 95%);
     }
     header{
-        margin: 0 0.5rem;
+        margin: 0 1.5rem;
     }
     .logo{
         font-size: 1.2rem;
@@ -52,9 +52,9 @@ header a:hover{
         display: none;
     }
 
-    .nav-login {
+    /* .nav-login {
         display: none;
-    }
+    } */
 
     .links button{
         font-size: 0.8rem;

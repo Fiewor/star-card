@@ -1,5 +1,5 @@
 footer {
-    background: #334;
+    background: #1B1B1B;
     color: #fff;
     padding: 2rem;
 }
@@ -8,7 +8,7 @@ footer {
     margin: 0 2rem;
     padding: 2rem 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     border-bottom: 2px solid#2E8FFF;
 } 
@@ -41,6 +41,10 @@ footer {
 .social-links i:first-of-type{
     margin-left: 0;
 }
+.social-links i:hover {
+    cursor: pointer;
+    background: #0077ff;
+}
 
 .footer-secondary-container{
     display: flex;
@@ -63,24 +67,17 @@ a:hover{
 
 
 @media only screen and (max-width: 768px) {
+    footer{
+        padding: .5rem;
+    }
     .footer-container {
-        display: block;
-        text-align: center;
+        margin: 0 .5rem;
     }
 
     .social-links {
         padding-top: 1rem;
     }
 
-    header {
-        justify-content: space-around;
-        margin: 0 0rem;
-    }
-
-    .footer-nav {
-        margin-top: 1rem;
-    }
-    
     .social-links i {
         background: transparent;
         margin: 0.2rem;

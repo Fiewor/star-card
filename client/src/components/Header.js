@@ -7,14 +7,14 @@ const Header = () => {
     return(
         <div className="header-container">
             <header>
-                <p className="logo">Starcard</p>
+                <Link to="/" className="logo">Starcard</Link>
                 <div className="links first-nav-links">
                     <Link to="/">Pricing</Link>
                     <Link to="/">Support</Link>
                 </div>
                 <div className="links">
                     <Link to="/signup">
-                        <button>Create Workspace</button>
+                        <WorkspaceButton/>
                     </Link>
                     <Link 
                         to="/login"
@@ -22,7 +22,7 @@ const Header = () => {
                     >
                         Login
                     </Link>
-                </div> 
+                </div>
             </header>
         </div>
     )

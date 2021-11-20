@@ -24,9 +24,8 @@ const Footer = () => {
                 <div className="footer-secondary-container footer-nav">
                     <p>Discover</p>
                     <Link to="">Culture</Link>
-                    <Link to="">Cuisine</Link>
+                    <Link to="">Contribute</Link>
                     <Link to="">Community</Link>
-                    <Link to="">Companionship</Link>
                 </div>
             </div>            
         </footer>

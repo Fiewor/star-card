@@ -8,7 +8,6 @@
 - [Live Demo URL](#live-demo-url)
 - [Road Map](#road-map)
 - [The Team](#the-team)
-- [Licenses](#licenses)
 
 ## Overview
 During the pandemic the immense contribution and importance of our everyday heroes was undoubtedly spotlighted.
@@ -34,11 +33,15 @@ So, we created Star Card to be an easily accessible web platform for real-time r
 The [importance](https://www.uniprint.com.au/blogs/news/why-it-s-important-to-report-hazards-in-the-workplace#:~:text=Why%20Is%20Hazard%20Reporting%20Important,creating%20a%20safe%20working%20environment.&text=Most%20importantly%2C%20it%20ensures%20that,quality%20data%20to%20be%20collected) of reporting hazards cannot be over-emphasized so we aim to make the process easier and more efficient.
 ### Here is how it works:
 The workplace hero (supervisor or employee) who is witnessing an hazard
-  - opens the web app, 
-  - signs up
-  - fills a web form to make prioritized reports of hazards as text, picture and/or video format.
-  - then submits.
-- The data submitted is displayed on a dashboard for first responders to evaluate and prioritize hazard reports.
+  - opens the web app
+  - signs up to create an organisational workspace
+  - logs into their workspace account using their newly created account details
+  - gets access to the dashboard from where the user can 
+    - add report by filling a form to make reports of hazards in form of text, picture and/or video format.
+    - add employee access so other employees within the organisation can also submit risk reports
+  - the information entered in these reports are then displayed in a visually in the dashboard.
+  - p.s: in a future version of the app, the dashboard display will be more visually appealing through the use of pie charts, bar graphs and other visual aids that help present the data better.
+- The compiled dashboard information is now accesible for first responders and other authotities involved to evaluate, prioritize hazard reports and mitigate/handle such hazards appropriately.
 
 ## The Architecture:
 
@@ -48,11 +51,14 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 ## Technologies
 - IBM Cloud (Cloud Foundry)
 - React
+- Redux
 - PHP(Laravel)
+- Figma
+- Trello
 
 ## Demo Video Link:
 
-## Live Demo URL:
+## Live Demo URL: https://star-card.us-south.cf.appdomain.cloud/
 
 ## Road Map
 - Possiblity of frontline workers to report hazards to emergency response team via Computer vision,  Augmented Reality and Livestreaming Technologies.
@@ -68,5 +74,3 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
 - [Israel Chidera Edeh](https://github.com/IsraelChidera)
 - [John Fiewor](https://github.com/Fiewor)
 - [Ani Precious Ebuka]()
-
-## Licenses:

@@ -3,7 +3,7 @@ import '../components/LandingPage.css';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';
 import { Link } from 'react-router-dom';
-import HeroImage from '../assets/powerful.svg'
+import {ReactComponent as HeroImage} from '../assets/powerful.svg'
 
 const LandingPage = () => {
     return(
@@ -12,9 +12,9 @@ const LandingPage = () => {
             <div className="main-container">
                 <div className="hero-container"> 
                     <h1>Be a Hero to your Heroes</h1>
-                    <h3>Create a workspace that enhances your teams safety and 
-                        productivity with our risk analysis reporting tool
-                    </h3> 
+                    <h2>Create a workspace that enhances your team's safety and 
+                        productivity with our risk reporting tool.
+                    </h2> 
                     <div className="button-container">
                         <Link to="/signup">
                             <button className="workspace-signup">Create Workspace</button>
@@ -24,9 +24,8 @@ const LandingPage = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="hero-img">
-                    {/* <img src={HeroImage} alt="super black woman with cape"/> */}
-                    <HeroImage/>
+                <div>
+                    <HeroImage className="hero-img"/>
                 </div>
             </div>
 

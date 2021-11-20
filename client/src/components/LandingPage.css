@@ -4,16 +4,17 @@
 .main-container {
     background: linear-gradient(245deg, #97c7ff52 5%, #caffe500 30%, #cad0ff52 62%, #bcdbffc2 99%);
     /* flex-direction: column; */
+    display: flex;
     justify-content: space-between;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 .hero-container{
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 50%;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     margin: 0 2rem;
 }
 .hero-container h1{
@@ -21,14 +22,16 @@
     font-weight: 700;
     color: #6d6a6a;
     line-height: 1;
-    padding-top: 1rem;
 }
 
-.hero-container h3{
+.hero-container h2{
     color: #8f8f8f;
-    padding: 2rem 0;
+    padding: 0;
+    line-height: 2;
 }
-
+.hero-img{
+    width: 50vw;
+}
 .button-container button:hover{
     cursor: pointer;
     background: #1875e0;
@@ -110,7 +113,14 @@ a:hover{
     color: #8f8f8f;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+    /* .mobile-bg{
+        background: rgba(0,0,0, 0.4) url('../assets/powerful.svg') no-repeat fixed center;
+        filter: blur(10px);
+        width: 100vw;
+        height: 100vh;
+        z-index: -99;
+    } */
     .hero-container{
         width: 80%;
     }
@@ -127,10 +137,16 @@ a:hover{
     .secondary-container div p{
         font-size: 1rem;
     }
-
+    
     .hero-container h3 {
         color: #8f8f8f;
         padding: 1rem 0;
         font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .hero-img{
+        display: none;
     }
 }

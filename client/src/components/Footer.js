@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="social-container footer-nav">
-                    <p>Starcard</p>
+                    <Link to="/">Starcard</Link>
                     <div className="social-links">
                         <i class="fas fa-envelope"></i>
                         <i class="fab fa-facebook-f"></i>

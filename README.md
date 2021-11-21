@@ -65,8 +65,7 @@ The Prototype Wireframe Document: https://www.figma.com/file/xenIMomkzFMsNDt7nsR
   - Samsung mobile devices
 
 ### Demo Video Link
-https://youtu.be/_L9dyOHRD68
-
+https://youtu.be/yGp_LEG1oxA
 ### Live Demo URL
 https://star-card.us-south.cf.appdomain.cloud/
 
